@@ -12,13 +12,22 @@
 
 <p align="center" style="text-align:center;">
     <a href="https://travis-ci.com/ms-design/ms-design">
-        <img src="https://img.shields.io/travis/com/ms-design/ms-design/master.svg?style=flat-square" alt="Build Status">
+        <img src="https://img.shields.io/travis/com/ms-design/ms-design.svg?style=flat-square" alt="Build Status">
+    </a>
+    <a href="https://codecov.io/gh/ms-design/ms-design">
+        <img src="https://img.shields.io/codecov/c/github/ms-design/ms-design.svg?style=flat-square" alt="Coverage Status">
     </a>
     <a href="https://npmcharts.com/compare/ms-design?minimal=true">
-        <img src="https://img.shields.io/npm/d/ms-design.svg?style=flat-square" alt="Downloads">
+        <img src="https://img.shields.io/npm/dt/ms-design.svg?style=flat-square" alt="Downloads">
     </a>
     <a href="https://www.npmjs.com/package/ms-design">
         <img src="https://img.shields.io/npm/v/ms-design.svg?style=flat-square" alt="Version">
+    </a>
+    <a>
+        <img src="https://img.shields.io/david/ms-design/ms-design.svg?style=flat-square" alt="Dependencies">
+    </a>
+    <a>
+        <img src="https://img.shields.io/david/dev/ms-design/ms-design.svg?style=flat-square" alt="DevDependencies">
     </a>
     <a href="https://www.npmjs.com/package/ms-design">
         <img src="https://img.shields.io/npm/l/ms-design.svg?style=flat-square" alt="License">
