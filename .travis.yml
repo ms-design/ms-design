@@ -2,23 +2,24 @@ sudo: false
 
 language: node_js
 
+node_js: 8
+
 notifications:
-  email: false
+  email:
+    recipients: pyyzcwg2833@outlook.com
+    on_success: never
+    on_failure: always
 
-os:
-  - linux
-  - osx
-
-node_js:
-  - 8
-  - 10
+env:
+  global:
+    - GH_REF: github.com/ms-design/ms-design.github.io
 
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash
   - export PATH=$HOME/.yarn/bin:$PATH
 
 install:
-  - yarn
+  - yarn install
 
 script:
   - yarn run clean
@@ -26,4 +27,11 @@ script:
   - yarn run build
 
 after_success:
-  - yarn run codecov --token=$CODECOV_TOKEN
+  - yarn run codecov --token=${CODECOV_TOKEN}
+  - cd dist
+  - git init
+  - git config user.name 'pyyzcwg2833'
+  - git config user.email 'pyyzcwg2833@outlook.com'
+  - git add -A
+  - git commit -m "update documents by travis-ci with build $TRAVIS_BUILD_NUMBER"
+  - git push --force "https://${GH_TOKEN}@${GH_REF}" master:master
