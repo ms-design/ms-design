@@ -1,0 +1,29 @@
+sudo: false
+
+language: node_js
+
+notifications:
+  email: false
+
+os:
+  - linux
+  - osx
+
+node_js:
+  - 8
+  - 10
+
+before_install:
+  - curl -o- -L https://yarnpkg.com/install.sh | bash
+  - export PATH=$HOME/.yarn/bin:$PATH
+
+install:
+  - yarn
+
+script:
+  - yarn run clean
+  - yarn run test
+  - yarn run build
+
+after_success:
+  - yarn run codecov --token=$CODECOV_TOKEN

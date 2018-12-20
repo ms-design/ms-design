@@ -1,0 +1,86 @@
+{
+  "name": "ms-design",
+  "version": "0.0.1",
+  "description": "Vue components that implement Microsoft's Fluent Design",
+  "main": "lib/ms-design.common.js",
+  "files": [
+    "src",
+    "lib"
+  ],
+  "scripts": {
+    "dev": "vue-cli-service serve --open",
+    "serve": "vue-cli-service serve --open",
+    "build:docs": "vue-cli-service build",
+    "build:lib": "vue-cli-service build --target lib --name msdesign --dest lib src/index.js",
+    "build": "yarn run clean && yarn run build:docs && yarn run build:lib",
+    "inspect": "vue-cli-service inspect",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit",
+    "test": "yarn run test:unit",
+    "commit": "git-cz",
+    "release": "bash scripts/release.sh",
+    "clean": "rimraf dist && rimraf lib && rimraf coverage"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "node scripts/verify-commit-msg.js"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "author": "pyyzcwg2833 <pyyzcwg2833@outlook.com>",
+  "keywords": [
+    "ms-design",
+    "microsoft fluent",
+    "fluent design",
+    "uwp design",
+    "vue components"
+  ],
+  "homepage": "https://github.com/ms-design/ms-design#readme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ms-design/ms-design.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ms-design/ms-design/issues"
+  },
+  "dependencies": {
+    "clipboard": "^2.0.4",
+    "vue": "^2.5.21",
+    "vue-router": "^3.0.2",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.2.0",
+    "@vue/cli-plugin-eslint": "^3.2.0",
+    "@vue/cli-plugin-unit-jest": "^3.2.0",
+    "@vue/cli-service": "^3.2.0",
+    "@vue/eslint-config-airbnb": "^4.0.0",
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "chalk": "^2.4.1",
+    "codecov": "^3.1.0",
+    "commitizen": "^3.0.5",
+    "conventional-changelog-cli": "^2.0.11",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^5.10.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "lint-staged": "^8.1.0",
+    "rimraf": "^2.6.2",
+    "vue-template-compiler": "^2.5.21",
+    "yorkie": "^2.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
