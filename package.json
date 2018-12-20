@@ -12,7 +12,7 @@
     "serve": "vue-cli-service serve --open",
     "build:docs": "vue-cli-service build",
     "build:lib": "vue-cli-service build --target lib --name msdesign --dest lib src/index.js",
-    "build": "yarn run clean && yarn run build:docs && yarn run build:lib",
+    "build": "yarn run build:docs && yarn run build:lib",
     "inspect": "vue-cli-service inspect",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
