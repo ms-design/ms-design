@@ -1,6 +1,6 @@
 {
   "name": "ms-design",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Vue components that implement Microsoft's Fluent Design",
   "main": "lib/ms-design.common.js",
   "files": [

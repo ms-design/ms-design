@@ -8,7 +8,6 @@ else
 fi
 
 read -p "Releasing $VERSION - are you sure? (y/Y/n/N) " AGREE
-read -p ""
 if [[ $AGREE =~ ^[yY]$ ]]; then
   echo "Releasing $VERSION ......"
   ./node_modules/.bin/conventional-changelog -p angular -i CHANGELOG.md -s -r 0
