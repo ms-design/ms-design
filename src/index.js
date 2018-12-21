@@ -3,12 +3,14 @@ import Button from './components/button';
 import Checkbox from './components/checkbox';
 import Input from './components/input';
 import Icon from './components/icon';
+import Toggle from './components/toggle';
 
 const components = {
   Button,
   Checkbox,
   Input,
-  Icon
+  Icon,
+  Toggle
 };
 
 const install = function(Vue) {
