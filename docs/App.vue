@@ -37,6 +37,10 @@ export default {
         {
           path: '/icon',
           label: 'Icon'
+        },
+        {
+          path: '/toggle',
+          label: 'Toggle'
         }
       ]
     };

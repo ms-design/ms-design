@@ -5,6 +5,7 @@ import CheckboxPage from './views/checkbox.vue';
 import IndexPage from './views/index.vue';
 import InputPage from './views/input.vue';
 import IconPage from './views/icon.vue';
+import TogglePage from './views/toggle.vue';
 
 Vue.use(Router);
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/icon',
       name: 'icon',
       component: IconPage
+    },
+    {
+      path: '/toggle',
+      name: 'toggle',
+      component: TogglePage
     }
   ]
 });
