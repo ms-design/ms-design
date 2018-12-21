@@ -27,6 +27,10 @@ export default {
           label: 'Button'
         },
         {
+          path: '/radio',
+          label: 'Radio'
+        },
+        {
           path: '/checkbox',
           label: 'Checkbox'
         },
