@@ -1,5 +1,5 @@
 <p align="center" style="text-align:center;">
-    <a href="https://ms-design.github.io/" target="_blank">
+    <a href="https://ms-design.github.io/">
         <img width="220" src="./public/logo.png">
     </a>
 </p>
@@ -31,6 +31,9 @@
     </a>
     <a href="https://www.npmjs.com/package/ms-design">
         <img src="https://img.shields.io/npm/l/ms-design.svg?style=flat-square" alt="License">
+    </a>
+    <a href="https://gitter.im/ms-design/ms-design">
+        <img src="https://img.shields.io/gitter/room/ms-design/ms-design.svg?style=flat-square" alt="Chat On Gitter">
     </a>
 </p>
 
