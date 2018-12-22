@@ -1,17 +1,19 @@
 <template>
   <div class="radio-page">
     <ShowComponents title="状态">
-      <ShowComponentsItem label="未选中">
-        <Radio v-model="value1" @change="handleChange"></Radio>
+      <ShowComponentsItem label="普通">
+        <RadioGroup v-model="value1">
+          <Radio value="chen">chen</Radio>
+          <Radio value="wen">wen</Radio>
+          <Radio value="gang">gang</Radio>
+        </RadioGroup>
       </ShowComponentsItem>
-      <ShowComponentsItem label="已打开">
-        <Radio v-model="value2" @change="handleChange"></Radio>
-      </ShowComponentsItem>
-      <ShowComponentsItem label="未打开禁用">
-        <Radio v-model="value3" :disabled="true"></Radio>
-      </ShowComponentsItem>
-      <ShowComponentsItem label="已打开禁用">
-        <Radio v-model="value4" :disabled="true"></Radio>
+      <ShowComponentsItem label="禁用">
+        <RadioGroup v-model="value2">
+          <Radio value="chen">chen</Radio>
+          <Radio value="wen" :disabled="true">wen</Radio>
+          <Radio value="gang">gang</Radio>
+        </RadioGroup>
       </ShowComponentsItem>
     </ShowComponents>
   </div>
@@ -21,16 +23,9 @@ export default {
   name: 'RadioPage',
   data() {
     return {
-      value1: false,
-      value2: true,
-      value3: false,
-      value4: true
+      value1: 'chen',
+      value2: ''
     };
-  },
-  methods: {
-    handleChange(value) {
-      console.log(value)
-    }
   }
 };
 </script>

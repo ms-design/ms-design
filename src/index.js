@@ -9,6 +9,7 @@ import Toggle from './components/toggle';
 const components = {
   Button,
   Radio,
+  RadioGroup: Radio.Group,
   Checkbox,
   Input,
   Icon,
