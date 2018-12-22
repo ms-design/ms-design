@@ -11,16 +11,16 @@
 </p>
 
 <p align="center" style="text-align:center;">
-    <a href="https://travis-ci.com/ms-design/ms-design">
+    <a href="https://travis-ci.com/ms-design/ms-design" target="_blank">
         <img src="https://img.shields.io/travis/com/ms-design/ms-design.svg?style=flat-square" alt="Build Status">
     </a>
-    <a href="https://codecov.io/gh/ms-design/ms-design">
+    <a href="https://codecov.io/gh/ms-design/ms-design" target="_blank">
         <img src="https://img.shields.io/codecov/c/github/ms-design/ms-design.svg?style=flat-square" alt="Coverage Status">
     </a>
-    <a href="https://npmcharts.com/compare/ms-design?minimal=true">
+    <a href="https://npmcharts.com/compare/ms-design?minimal=true" target="_blank">
         <img src="https://img.shields.io/npm/dt/ms-design.svg?style=flat-square" alt="Downloads">
     </a>
-    <a href="https://www.npmjs.com/package/ms-design">
+    <a href="https://www.npmjs.com/package/ms-design" target="_blank">
         <img src="https://img.shields.io/npm/v/ms-design.svg?style=flat-square" alt="Version">
     </a>
     <a>
@@ -29,8 +29,11 @@
     <a>
         <img src="https://img.shields.io/david/dev/ms-design/ms-design.svg?style=flat-square" alt="DevDependencies">
     </a>
-    <a href="https://www.npmjs.com/package/ms-design">
+    <a href="https://www.npmjs.com/package/ms-design" target="_blank">
         <img src="https://img.shields.io/npm/l/ms-design.svg?style=flat-square" alt="License">
+    </a>
+    <a href="https://gitter.im/ms-design/ms-design" target="_blank">
+        <img src="https://img.shields.io/gitter/room/ms-design/ms-design.svg?style=flat-square" alt="Chat On Gitter">
     </a>
 </p>
 
