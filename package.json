@@ -11,7 +11,7 @@
     "dev": "vue-cli-service serve --open",
     "serve": "vue-cli-service serve --open",
     "build:docs": "vue-cli-service build",
-	  "build:lib": "vue-cli-service build --target lib --name ms-design --dest lib src/index.js && rimraf lib/demo.html",
+    "build:lib": "vue-cli-service build --target lib --name ms-design --dest lib src/index.js && rimraf lib/demo.html",
     "build": "yarn run build:docs && yarn run build:lib",
     "inspect": "vue-cli-service inspect",
     "lint": "vue-cli-service lint",
