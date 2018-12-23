@@ -9,7 +9,7 @@ describe('default checkbox', () => {
   it('is a vue instance', () => {
     const wrapper = shallowMount(Checkbox);
     expect(wrapper.exists()).toBeTruthy();
-    expect(wrapper.isVueInstance).toBeTruthy();
+    expect(wrapper.isVueInstance()).toBeTruthy();
   });
   // 包含特定类名
   it('contains specific classnames', () => {
