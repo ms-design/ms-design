@@ -5,13 +5,13 @@
   "main": "lib/ms-design.common.js",
   "files": [
     "src",
-    "lib/**/*.{js,css,tff,woff,woff2}"
+    "lib/**/*.{js,css,ttf,woff,woff2}"
   ],
   "scripts": {
     "dev": "vue-cli-service serve --open",
     "serve": "vue-cli-service serve --open",
     "build:docs": "vue-cli-service build",
-    "build:lib": "vue-cli-service build --target lib --name msdesign --dest lib src/index.js",
+	  "build:lib": "vue-cli-service build --target lib --name ms-design --dest lib src/index.js && rimraf lib/demo.html",
     "build": "yarn run build:docs && yarn run build:lib",
     "inspect": "vue-cli-service inspect",
     "lint": "vue-cli-service lint",
