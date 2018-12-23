@@ -75,8 +75,7 @@
     "less-loader": "^4.1.0",
     "lint-staged": "^8.1.0",
     "rimraf": "^2.6.2",
-    "vue-template-compiler": "^2.5.21",
-    "yorkie": "^2.0.0"
+    "vue-template-compiler": "^2.5.21"
   },
   "config": {
     "commitizen": {

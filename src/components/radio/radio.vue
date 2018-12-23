@@ -9,6 +9,16 @@
   </div>
 </template>
 <script>
+/**
+ * Radio
+ * @module components/radio
+ * @desc   单选框
+ * @param  {String|Number} value     - 被选中时的值
+ * @param  {Boolean}       disabled  - 是否禁用
+ *
+ * @example
+ * <Radio value="123">label1</Radio>
+ */
 export default {
   name: 'Radio',
   props: {
@@ -34,7 +44,7 @@ export default {
   },
   methods: {
     handleClick() {
-      if (!this.disabled || this.checked) {
+      if (!this.disabled && !this.checked) {
         this.$parent.changeValue(this.value);
       }
     }
