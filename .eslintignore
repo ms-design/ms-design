@@ -1,4 +1,4 @@
-dist/
+docs/.vuepress/dist
 lib/
 node_modules/
 /coverage

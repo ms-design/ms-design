@@ -1,3 +1,5 @@
+<checkbox-page />
+
 ### API
 
 #### Checkbox props
