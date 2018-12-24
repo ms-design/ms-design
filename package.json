@@ -8,9 +8,8 @@
     "lib/**/*.{js,css,ttf,woff,woff2}"
   ],
   "scripts": {
-    "dev": "vue-cli-service serve --open",
-    "serve": "vue-cli-service serve --open",
-    "build:docs": "vue-cli-service build",
+    "dev": "vuepress dev docs --open",
+    "build:docs": "vuepress build docs",
     "build:lib": "vue-cli-service build --target lib --name ms-design --dest lib src/index.js && rimraf lib/demo.html",
     "build": "yarn run build:docs && yarn run build:lib",
     "inspect": "vue-cli-service inspect",
@@ -19,7 +18,7 @@
     "test": "yarn run test:unit",
     "commit": "git-cz",
     "changelog": "node scripts/generate-changelog.js",
-    "clean": "rimraf dist && rimraf lib && rimraf coverage"
+    "clean": "rimraf docs/.vuepress/dist && rimraf lib && rimraf coverage"
   },
   "gitHooks": {
     "pre-commit": "lint-staged",
@@ -49,10 +48,7 @@
     "url": "https://github.com/ms-design/ms-design/issues"
   },
   "dependencies": {
-    "clipboard": "^2.0.4",
-    "vue": "^2.5.21",
-    "vue-router": "^3.0.2",
-    "vuex": "^3.0.1"
+    "vue": "^2.5.21"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.2.0",
@@ -76,7 +72,8 @@
     "less-loader": "^4.1.0",
     "lint-staged": "^8.1.0",
     "rimraf": "^2.6.2",
-    "vue-template-compiler": "^2.5.21"
+    "vue-template-compiler": "^2.5.21",
+    "vuepress": "^1.0.0-alpha.30"
   },
   "config": {
     "commitizen": {
