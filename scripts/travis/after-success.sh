@@ -1,7 +1,7 @@
 #!/bin/bash
+yarn run codecov --token=${CODECOV_TOKEN}
 if [[ ${TRAVIS_BRANCH} == 'master' ]];
 then
-  yarn run codecov --token=${CODECOV_TOKEN}
   cd dist
   git init
   git config user.name 'pyyzcwg2833'

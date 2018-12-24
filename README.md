@@ -54,7 +54,7 @@ yarn add ms-design
 ```javascript
 import Vue from 'vue';
 import msd from 'ms-deisgn';
-import 'ms-deisgn/lib/msdesign.css';
+import 'ms-deisgn/lib/ms-design.css';
 
 Vue.use(msd);
 ```
