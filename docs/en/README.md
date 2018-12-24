@@ -37,7 +37,7 @@
     </a>
 </p>
 
-## Installation
+### Installation
 
 MS Design is available as an [npm package](https://www.npmjs.com/package/ms-design)
 
@@ -49,7 +49,7 @@ npm install ms-design -S
 yarn add ms-design
 ```
 
-## Usage
+### Usage
 
 ```javascript
 import Vue from 'vue';
@@ -59,18 +59,18 @@ import 'ms-deisgn/lib/ms-design.css';
 Vue.use(msd);
 ```
 
-## Browser Support
+### Browser Support
 
 Modern browsers and Internet Explorer 10+.
 
-## Changelog
+### Changelog
 
 Detailed changes for each release are documented in the [release notes](https://github.com/ms-design/ms-design/releases).
 
-## Documentation
+### Documentation
 
 Check out our [documentation website](https://ms-design.github.io/).
 
-## Licence
+### Licence
 
 This project is licensed under the terms of the MIT license.

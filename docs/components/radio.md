@@ -1,3 +1,5 @@
+<radio-page />
+
 ### API
 
 #### Radio props

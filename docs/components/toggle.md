@@ -1,3 +1,5 @@
+<toggle-page />
+
 ### API
 
 #### Toggle props

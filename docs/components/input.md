@@ -1,3 +1,4 @@
+<input-page />
 ### API
 
 #### Input props

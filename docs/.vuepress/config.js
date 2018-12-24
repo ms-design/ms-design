@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   title: 'MS Design',
   locales: {
@@ -17,12 +19,15 @@ module.exports = {
         label: '简体中文',
         sidebar: [
           {
-            title: '基础',
+            title: 'Basic 基础',
             collapsable: false,
-            children: [['/components/button', 'Button 按钮']]
+            children: [
+              ['/components/button', 'Button 按钮'],
+              ['/components/icon', 'Icon 图标']
+            ],
           },
           {
-            title: '表单',
+            title: 'Form 表单',
             collapsable: false,
             children: [
               ['/components/input', 'Input 输入框'],
@@ -36,10 +41,33 @@ module.exports = {
       '/en/': {
         selectText: 'Languages',
         label: 'English',
-        sidebar: 'auto'
+        sidebar: [
+          {
+            title: 'Basic',
+            collapsable: false,
+            children: [
+              ['/components/button', 'Button'],
+              ['/components/icon', 'Icon']
+            ]
+          },
+          {
+            title: 'Form',
+            collapsable: false,
+            children: [
+              ['/components/input', 'Input'],
+              ['/components/radio', 'Radio'],
+              ['/components/checkbox', 'Checkbox'],
+              ['/components/toggle', 'Toggle']
+            ]
+          }
+        ]
       }
     },
+    search: false,
     repo: 'ms-design/ms-design',
     repoLabel: 'Github'
+  },
+  chainWebpack: (config, isServer) => {
+    config.resolve.alias.set('@', path.resolve(__dirname, '../../src'))
   }
 };

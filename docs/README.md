@@ -7,7 +7,7 @@
 <h1 align="center" style="text-align:center;">MS Design</h1>
 
 <p align="center" style="text-align:center;">
-    基于微软<a href="https://fluent.microsoft.com/">Fluent Design</a>设计的<a href="https://vuejs.org/">Vue</a>组件库
+    基于微软 <a href="https://fluent.microsoft.com/">Fluent Design</a> 设计的 <a href="https://vuejs.org/">Vue</a> 组件库
 </p>
 
 <p align="center" style="text-align:center;">
@@ -37,9 +37,9 @@
     </a>
 </p>
 
-## 安装
+### 安装
 
-使用 npm 或 yarn 来安装MS Design
+使用 npm 或 yarn 来安装 MS Design
 
 ```bash
 # with npm
@@ -49,7 +49,7 @@ npm install ms-design -S
 yarn add ms-design
 ```
 
-## 使用
+### 使用
 
 ```javascript
 import Vue from 'vue';
@@ -59,18 +59,18 @@ import 'ms-deisgn/lib/ms-design.css';
 Vue.use(msd);
 ```
 
-## 浏览器支持
+### 浏览器支持
 
 支持IE10及以上的现代主流浏览器
 
-## 更新日志
+### 更新日志
 
 详情请查看[Github更新日志](https://github.com/ms-design/ms-design/releases)
 
-## 文档
+### 文档
 
 详情请查看[文档网站](https://ms-design.github.io/)
 
-## 许可证
+### 许可证
 
 本项目使用MIT许可证

@@ -8,7 +8,7 @@
     "lib/**/*.{js,css,ttf,woff,woff2}"
   ],
   "scripts": {
-    "dev": "vuepress dev docs --open",
+    "dev": "vuepress dev docs --open --no-cache --host localhost",
     "build:docs": "vuepress build docs",
     "build:lib": "vue-cli-service build --target lib --name ms-design --dest lib src/index.js && rimraf lib/demo.html",
     "build": "yarn run build:docs && yarn run build:lib",
@@ -48,6 +48,7 @@
     "url": "https://github.com/ms-design/ms-design/issues"
   },
   "dependencies": {
+    "clipboard": "^2.0.4",
     "vue": "^2.5.21"
   },
   "devDependencies": {
