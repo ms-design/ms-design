@@ -39,7 +39,7 @@ export default {
     }
   },
   methods: {
-    handleClick(event) {
+    handleClick() {
       if (!this.disabled) {
         this.$emit('change', !this.checked);
       }
