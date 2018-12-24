@@ -2,7 +2,7 @@
 yarn run codecov --token=${CODECOV_TOKEN}
 if [[ ${TRAVIS_BRANCH} == 'master' ]];
 then
-  cd dist
+  cd docs/.vuepress/dist
   git init
   git config user.name 'pyyzcwg2833'
   git config user.email 'pyyzcwg2833@outlook.com'
