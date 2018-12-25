@@ -1,12 +1,12 @@
 <p align="center" style="text-align:center;">
     <a href="https://ms-design.github.io/">
-        <img width="220" src="../public/logo.png">
+        <img width="220" :src="$withBase('/logo.png')">
     </a>
 </p>
 
 <h1 align="center" style="text-align:center;">MS Design</h1>
 
-<p align="center" style="text-align:center;">
+<p align="center" style="text-align:center;margin: 10px 0;">
     基于微软 <a href="https://fluent.microsoft.com/">Fluent Design</a> 设计的 <a href="https://vuejs.org/">Vue</a> 组件库
 </p>
 
