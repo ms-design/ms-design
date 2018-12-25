@@ -1,3 +1,7 @@
+---
+title: Checkbox 复选框
+---
+
 <checkbox-page />
 
 ### API

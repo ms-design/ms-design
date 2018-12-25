@@ -1,6 +1,6 @@
 <template>
   <div class="show-components-item">
-    <h4 class="label">{{label}}</h4>
+    <label class="label">{{label}}</label>
     <div class="components" :class="{'horizental': horizental}">
       <slot></slot>
     </div>

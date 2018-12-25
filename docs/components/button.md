@@ -1,3 +1,7 @@
+---
+title: Button 按钮
+---
+
 <button-page />
 
 ### API

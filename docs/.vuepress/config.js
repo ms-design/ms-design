@@ -2,6 +2,9 @@ const path = require('path');
 
 module.exports = {
   title: 'MS Design',
+  head: [
+    ['link', { rel: 'icon', href: '/logo.png' }]
+  ],
   locales: {
     '/': {
       lang: 'zh-CN',
@@ -22,18 +25,18 @@ module.exports = {
             title: 'Basic 基础',
             collapsable: false,
             children: [
-              ['/components/button', 'Button 按钮'],
-              ['/components/icon', 'Icon 图标']
-            ],
+              '/components/button.md',
+              '/components/icon.md',
+            ]
           },
           {
             title: 'Form 表单',
             collapsable: false,
             children: [
-              ['/components/input', 'Input 输入框'],
-              ['/components/radio', 'Radio 单选框'],
-              ['/components/checkbox', 'Checkbox 复选框'],
-              ['/components/toggle', 'Toggle 开关']
+              '/components/input.md',
+              '/components/radio.md',
+              '/components/checkbox.md',
+              '/components/toggle.md',
             ]
           }
         ]
@@ -46,18 +49,18 @@ module.exports = {
             title: 'Basic',
             collapsable: false,
             children: [
-              ['/components/button', 'Button'],
-              ['/components/icon', 'Icon']
+              '/components/button.md',
+              '/components/icon.md',
             ]
           },
           {
             title: 'Form',
             collapsable: false,
             children: [
-              ['/components/input', 'Input'],
-              ['/components/radio', 'Radio'],
-              ['/components/checkbox', 'Checkbox'],
-              ['/components/toggle', 'Toggle']
+              '/components/input.md',
+              '/components/radio.md',
+              '/components/checkbox.md',
+              '/components/toggle.md',
             ]
           }
         ]

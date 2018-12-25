@@ -1,3 +1,7 @@
+---
+title: Input 输入框
+---
+
 <input-page />
 ### API
 
