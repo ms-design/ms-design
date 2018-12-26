@@ -2,6 +2,7 @@ const path = require('path');
 
 module.exports = {
   title: 'MS Design',
+  ga: 'UA-89371431-5',
   head: [
     ['link', { rel: 'icon', href: '/logo.png' }]
   ],
