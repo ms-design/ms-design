@@ -1,8 +1,9 @@
 ---
 title: Toggle 开关
 ---
-
-<toggle-page />
+<ClientOnly>
+  <toggle-page />
+</ClientOnly>
 
 ### API
 

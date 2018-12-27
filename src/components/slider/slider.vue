@@ -97,7 +97,7 @@ export default {
   }
 };
 </script>
-<style lang="less" scoped>
+<style lang="less">
 @import '~@/assets/styles/variable.less';
 
 .thumb-common-style() {
@@ -127,6 +127,7 @@ export default {
   position: relative;
   display: flex;
   align-items: center;
+  width: 100%;
   height: 24px;
   &__progress {
     position: absolute;

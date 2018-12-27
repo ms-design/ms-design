@@ -38,6 +38,7 @@ module.exports = {
               '/components/radio.md',
               '/components/checkbox.md',
               '/components/toggle.md',
+              '/components/slider.md'
             ]
           }
         ]
@@ -62,6 +63,7 @@ module.exports = {
               '/components/radio.md',
               '/components/checkbox.md',
               '/components/toggle.md',
+              '/components/slider.md'
             ]
           }
         ]

@@ -2,7 +2,9 @@
 title: Button 按钮
 ---
 
-<button-page />
+<ClientOnly>
+  <button-page />
+</ClientOnly>
 
 ### API
 
@@ -10,7 +12,7 @@ title: Button 按钮
 | 属性 | 说明 | 类型 | 可选值 | 默认值 |
 | :------------ | :------------ | :------------ | :------------ | :------------ |
 | type | 按钮类型 | String | `default`、`primary`、`disabled` 或者不设置 | `default` |
-| disabled | 是否禁用 | Boolean | `treu` \| `false` | `false` |
+| disabled | 是否禁用 | Boolean | `true` \| `false` | `false` |
 | size | 按钮大小 | String | `default`、`small`、`large` 或者不设置 | `default` |
 
 #### Button events

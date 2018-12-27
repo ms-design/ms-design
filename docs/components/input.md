@@ -2,14 +2,17 @@
 title: Input 输入框
 ---
 
-<input-page />
+<ClientOnly>
+  <input-page />
+</ClientOnly>
+
 ### API
 
 #### Input props
 | 属性 | 说明 | 类型 | 可选值 | 默认值 |
 | :------------ | :------------ | :------------ | :------------ | :------------ |
 | type | 输入框类型 | String | `text`、`password` 或者不设置 | `text` |
-| disabled | 输入框是否禁用 | Boolean | `treu` \| `false` | `false` |
+| disabled | 输入框是否禁用 | Boolean | `true` \| `false` | `false` |
 
 #### Input event
 | 事件名 | 说明 | 返回值 |

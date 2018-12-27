@@ -2,7 +2,9 @@
 title: Radio 单选框
 ---
 
+<ClientOnly>
 <radio-page />
+</ClientOnly>
 
 ### API
 
