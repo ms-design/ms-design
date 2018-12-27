@@ -1,12 +1,12 @@
 <p align="center" style="text-align:center;">
     <a href="https://ms-design.github.io/">
-        <img width="220" src="./docs/.vuepress/public/logo.png">
+        <img width="220" :src="$withBase('/logo.png')">
     </a>
 </p>
 
 <h1 align="center" style="text-align:center;">MS Design</h1>
 
-<p align="center" style="text-align:center;">
+<p align="center" style="text-align:center;margin: 10px 0;">
     <a href="https://vuejs.org/">Vue</a> components that implement <a href="https://fluent.microsoft.com/">Microsoft's Fluent Design</a>
 </p>
 
@@ -37,7 +37,7 @@
     </a>
 </p>
 
-## Installation
+### Installation
 
 MS Design is available as an [npm package](https://www.npmjs.com/package/ms-design)
 
@@ -49,7 +49,7 @@ npm install ms-design -S
 yarn add ms-design
 ```
 
-## Usage
+### Usage
 
 ```javascript
 import Vue from 'vue';
@@ -59,18 +59,18 @@ import 'ms-deisgn/lib/ms-design.css';
 Vue.use(msd);
 ```
 
-## Browser Support
+### Browser Support
 
 Modern browsers and Internet Explorer 10+.
 
-## Changelog
+### Changelog
 
 Detailed changes for each release are documented in the [release notes](https://github.com/ms-design/ms-design/releases).
 
-## Documentation
+### Documentation
 
 Check out our [documentation website](https://ms-design.github.io/).
 
-## Licence
+### Licence
 
 This project is licensed under the terms of the MIT license.
