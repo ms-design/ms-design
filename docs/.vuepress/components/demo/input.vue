@@ -1,5 +1,5 @@
 <template>
-  <div class="input-page">
+  <div class="demo-input">
     <show-components title="类型">
       <show-components-item label="文本">
         <Input type="text" />

@@ -1,11 +1,11 @@
 <template>
-  <div class="icon-page">
+  <div class="demo-icon">
     <div class="icon-note">
       <span class="icon-note-text">点击图标可复制标签</span>
     </div>
     <div class="icon-list">
       <show-icon v-for="(iconValue, iconKey) in iconList" :key="iconKey" :label="iconKey">
-        <Icon>{{iconValue}}</Icon>
+        <Icon :type="iconValue"></Icon>
       </show-icon>
     </div>
   </div>
@@ -21,7 +21,7 @@ export default {
   },
   mounted() {
     /* eslint-disable no-new */
-    new Clipboard('.icon-page .show-icon');
+    new Clipboard('.demo-icon .show-icon');
     /* eslint-enable */
   }
 };

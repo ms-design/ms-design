@@ -3,7 +3,7 @@ title: Slider 滑块
 ---
 
 <ClientOnly>
-  <slider-page />
+  <demo-slider />
 </ClientOnly>
 
 ### API

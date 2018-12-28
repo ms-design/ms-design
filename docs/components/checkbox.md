@@ -3,8 +3,9 @@ title: Checkbox 复选框
 ---
 
 <ClientOnly>
-  <checkbox-page />
+  <demo-checkbox />
 </ClientOnly>
+
 ### API
 
 #### Checkbox props

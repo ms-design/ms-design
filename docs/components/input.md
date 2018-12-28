@@ -3,7 +3,7 @@ title: Input 输入框
 ---
 
 <ClientOnly>
-  <input-page />
+  <demo-input />
 </ClientOnly>
 
 ### API

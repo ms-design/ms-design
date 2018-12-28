@@ -1,5 +1,5 @@
 <template>
-  <div class="radio-page">
+  <div class="demo-radio">
     <show-components title="状态">
       <show-components-item label="普通">
         <RadioGroup v-model="value1">
@@ -20,7 +20,6 @@
 </template>
 <script>
 export default {
-  name: 'RadioPage',
   data() {
     return {
       value1: 'chen',

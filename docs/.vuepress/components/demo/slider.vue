@@ -1,5 +1,5 @@
 <template>
-  <div class="toggle-page">
+  <div class="demo-toggle">
     <show-components title="状态">
       <show-components-item label="普通" style="width: 100%;">
         <Slider v-model="value1" @change="handleChange" @input="handleInput"></Slider>
@@ -12,7 +12,6 @@
 </template>
 <script>
 export default {
-  name: 'SliderPage',
   data() {
     return {
       value1: 30,

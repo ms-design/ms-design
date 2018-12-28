@@ -1,5 +1,5 @@
 <template>
-  <div class="toggle-page">
+  <div class="demo-toggle">
     <show-components title="状态">
       <show-components-item label="未打开">
         <Toggle v-model="value1" @change="handleChange"></Toggle>
@@ -18,7 +18,6 @@
 </template>
 <script>
 export default {
-  name: 'TogglePage',
   data() {
     return {
       value1: false,

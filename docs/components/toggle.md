@@ -2,7 +2,7 @@
 title: Toggle 开关
 ---
 <ClientOnly>
-  <toggle-page />
+  <demo-toggle />
 </ClientOnly>
 
 ### API

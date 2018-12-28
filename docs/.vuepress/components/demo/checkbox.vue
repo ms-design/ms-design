@@ -1,5 +1,5 @@
 <template>
-  <div class="checkbox-page">
+  <div class="demo-checkbox">
     <show-components title="状态">
       <show-components-item label="未选中">
         <Checkbox v-model="checked0" @change="handleChange" />

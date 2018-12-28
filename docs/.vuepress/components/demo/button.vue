@@ -1,5 +1,5 @@
 <template>
-  <div class="button-page">
+  <div class="demo-button">
     <show-components title="类型">
       <show-components-item label="默认按钮">
         <Button @click="handleClick">空</Button>
@@ -32,7 +32,6 @@
 </template>
 <script>
 export default {
-  name: 'button-page',
   methods: {
     handleClick() {
       alert('按钮被点击');

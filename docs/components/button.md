@@ -3,7 +3,7 @@ title: Button 按钮
 ---
 
 <ClientOnly>
-  <button-page />
+  <demo-button />
 </ClientOnly>
 
 ### API
