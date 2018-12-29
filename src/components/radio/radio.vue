@@ -75,7 +75,7 @@ export default {
   border: 2px solid rgba(0, 0, 0, 0.8);
   border-radius: 50%;
   overflow: hidden;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s;
   &.checked:not(.disabled) {
     border-color: @primary-color;
   }
@@ -90,7 +90,7 @@ export default {
   background-color: rgba(0, 0, 0, 0.8);
   transform: scale(0);
   opacity: 0;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s;
   &.checked {
     transform: scale(0.8);
     opacity: 1;

@@ -1,7 +1,7 @@
 <template>
   <div class="show-components-item">
-    <label class="label">{{label}}</label>
-    <div class="components" :class="{'horizental': horizental}">
+    <label class="show-components-item__label">{{label}}</label>
+    <div class="show-components-item__component" :class="{'horizental': horizental}">
       <slot></slot>
     </div>
   </div>
@@ -24,15 +24,14 @@ export default {
 .show-components-item {
   display: inline-block;
   margin-right: 100px;
-  overflow: hidden;
-  .label {
+  &__label {
     display: block;
     height: 18px;
     width: 100%;
     line-height: 18px;
     margin-bottom: 20px;
   }
-  .components {
+  &__component {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

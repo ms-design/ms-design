@@ -14,7 +14,7 @@ export default {
   },
   computed: {
     clipData() {
-      return `<Icon type="${this.label}"></Icon>`;
+      return `<Icon type="${this.label}" />`;
     }
   },
   methods: {
