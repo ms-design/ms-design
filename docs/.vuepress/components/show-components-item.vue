@@ -23,7 +23,7 @@ export default {
 <style lang="less" scoped>
 .show-components-item {
   display: inline-block;
-  margin-right: 100px;
+  margin: 20px 80px 0 0; 
   &__label {
     display: block;
     height: 18px;
