@@ -23,7 +23,11 @@ export default {
 <style lang="less" scoped>
 .show-components-item {
   display: inline-block;
-  margin: 20px 80px 0 0; 
+  margin: 20px 80px 0 0;
+  @media screen and (max-width: 419px) {
+    margin: 20px 0 0;
+    width: 100%;
+  }
   &__label {
     display: block;
     height: 18px;

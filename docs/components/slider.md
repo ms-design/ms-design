@@ -74,7 +74,7 @@ export default {
 | min | 最小值 | Number | - | 0 |
 | max | 最大值 | Number | - | 100 |
 
-### Slider event
+#### Slider event
 
 | 事件名 | 说明 | 返回值 |
 | :------------ | :------------ | :------------ |

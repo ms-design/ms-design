@@ -107,7 +107,6 @@ export default {
     }
   }
   &__body {
-    max-height: 80vh;
     padding: 20px 0;
     position: relative;
     display: flex;

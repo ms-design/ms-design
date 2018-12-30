@@ -184,6 +184,9 @@ export default {
   cursor: pointer;
   position: relative;
   transition: all 0.3s;
+  @media screen and (max-width: 419px) {
+    width: 100%;
+  }
   &__input {
     width: 100%;
     height: 100%;
