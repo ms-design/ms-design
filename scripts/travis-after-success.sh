@@ -1,6 +1,6 @@
 #!/bin/bash
 yarn run codecov --token=${CODECOV_TOKEN}
-if [[ ${TRAVIS_BRANCH} == 'master' ]];
+if [[ ${TRAVIS_BRANCH} == 'master' && ${TRAVIS_PULL_REQUEST} == false ]];
 then
   cd docs/.vuepress/dist
   git init
