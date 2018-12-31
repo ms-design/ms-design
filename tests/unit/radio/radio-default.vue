@@ -9,7 +9,6 @@
 import Radio from '@/components/radio';
 
 export default {
-  name: 'RadioTest',
   components: {
     Radio,
     RadioGroup: Radio.Group

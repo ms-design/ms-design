@@ -23,8 +23,9 @@ install:
 
 script:
   - yarn run clean
+  - yarn run lint
   - yarn run test
   - yarn run build
 
 after_success:
-  - bash ./scripts/travis/after-success.sh
+  - bash ./scripts/travis-after-success.sh

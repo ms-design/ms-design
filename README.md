@@ -1,6 +1,6 @@
 <p align="center" style="text-align:center;">
     <a href="https://ms-design.github.io/">
-        <img width="220" src="./public/logo.png">
+        <img width="220" src="./docs/.vuepress/public/logo.png">
     </a>
 </p>
 

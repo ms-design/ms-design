@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils';
-import Toggle from '../../src/components/toggle/toggle.vue';
+import Toggle from '@/components/toggle/toggle.vue';
 
 // 默认开关
 describe('default toggle', () => {

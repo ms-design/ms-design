@@ -19,6 +19,10 @@ const rgbColorReg = /^[rR][gG][Bb]\s*\(\s*(2[0-4][0-9]|25[0-5]|[01]?[0-9][0-9]?)
 export default {
   name: 'Icon',
   props: {
+    type: {
+      type: String,
+      default: ''
+    },
     // 最小12px, 最大48px
     size: {
       type: [Number, String],
@@ -39,10 +43,7 @@ export default {
   },
   computed: {
     iconContent() {
-      if (!this.$slots.default) {
-        return '';
-      }
-      return iconList[this.$slots.default[0].text] || this.$slots.default[0].text;
+      return iconList[this.type] || this.type;
     },
     style() {
       return {

@@ -4,6 +4,8 @@ import Radio from './components/radio';
 import Checkbox from './components/checkbox';
 import Input from './components/input';
 import Icon from './components/icon';
+import Select from './components/select';
+import Slider from './components/slider';
 import Toggle from './components/toggle';
 
 const components = {
@@ -13,6 +15,8 @@ const components = {
   Checkbox,
   Input,
   Icon,
+  Select,
+  Slider,
   Toggle
 };
 

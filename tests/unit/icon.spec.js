@@ -24,15 +24,15 @@ describe('default icon', () => {
   });
 });
 
-// 正常图标(内嵌icon的key或value)
+// 正常图标
 describe('normal icon having a slot', () => {
   const iconKeyList = Object.keys(iconList);
   const randomIconKey = iconKeyList[Math.floor(Math.random() * iconKeyList.length)];
   // 传递图标的key
   it('renders icon when passed icon\'s key', () => {
     const wrapper = shallowMount(Icon, {
-      slots: {
-        default: randomIconKey
+      propsData: {
+        type: randomIconKey
       }
     });
     expect(wrapper.text()).toEqual(iconList[randomIconKey]);
@@ -40,8 +40,8 @@ describe('normal icon having a slot', () => {
   // 传递图标的value
   it('renders icon when passed icon\'s value', () => {
     const wrapper = shallowMount(Icon, {
-      slots: {
-        default: iconList[randomIconKey]
+      propsData: {
+        type: iconList[randomIconKey]
       }
     });
     expect(wrapper.text()).toEqual(iconList[randomIconKey]);

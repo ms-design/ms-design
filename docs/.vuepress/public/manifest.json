@@ -1,0 +1,41 @@
+{
+  "name": "MS Design",
+  "short_name": "MS Design",
+  "start_url": "/index.html",
+  "display": "fullscreen",
+  "background_color": "#fff",
+  "theme_color": "#0078d4",
+  "description": "Vue components that implement Microsoft's Fluent Design",
+  "icons": [
+    {
+      "src": "images/homescreen72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "images/homescreen96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "images/homescreen128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "images/homescreen144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "images/homescreen192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/homescreen512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

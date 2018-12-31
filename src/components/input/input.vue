@@ -88,5 +88,8 @@ export default {
     box-shadow: inset 0px 0px 0 2px rgba(0, 0, 0, 0.2);
     cursor: not-allowed;
   }
+  @media screen and (max-width: 419px) {
+    width: 100%;
+  }
 }
 </style>
