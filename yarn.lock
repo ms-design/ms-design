@@ -609,6 +609,14 @@
     js-levenshtein "^1.1.3"
     semver "^5.3.0"
 
+"@babel/runtime-corejs2@^7.2.0":
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/@babel/runtime-corejs2/-/runtime-corejs2-7.2.0.tgz#5ccd722b72d2c18c6a7224b5751f4b9816b60ada"
+  integrity sha512-kPfmKoRI8Hpo5ZJGACWyrc9Eq1j3ZIUpUAQT2yH045OuYpccFJ9kYA/eErwzOM2jeBG1sC8XX1nl1EArtuM8tg==
+  dependencies:
+    core-js "^2.5.7"
+    regenerator-runtime "^0.12.0"
+
 "@babel/runtime@^7.0.0":
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.2.0.tgz#b03e42eeddf5898e00646e4c840fa07ba8dcad7f"
@@ -717,10 +725,10 @@
   resolved "https://registry.yarnpkg.com/@types/strip-json-comments/-/strip-json-comments-0.0.30.tgz#9aa30c04db212a9a0649d6ae6fd50accc40748a1"
   integrity sha512-7NQmHra/JILCd1QqpSzl8+mJRc8ZHz3uDm8YV1Ks9IhK0epEiTw8aIErbvH9PI+6XbqhyIQy3462nEsn7UVzjQ==
 
-"@vue/babel-preset-app@^3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@vue/babel-preset-app/-/babel-preset-app-3.2.0.tgz#a443acdbd34f66d7645db271d9ac58fbe4fe870d"
-  integrity sha512-yDPMhdeOnQ49EOsOnHXJZQ4aR+g+TZVkImUjRBN90MKv9V1C9HXxhU73Je6pWUQaJ0yugMr5jl058ns6Mx6mNA==
+"@vue/babel-preset-app@^3.2.2":
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/@vue/babel-preset-app/-/babel-preset-app-3.2.2.tgz#05d2643e9ea3986d34bc5c4ccdcb7d96ad61b229"
+  integrity sha512-qQkf/bAATfwC1aTKpjPXPeoITSV0uJaeCYrlBXrAH93+ycKWkK+mz7hjwYlGVo7xM/UTICXd3H14XPn1svK5yg==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.0.0"
     "@babel/plugin-proposal-decorators" "^7.1.0"
@@ -729,10 +737,11 @@
     "@babel/plugin-transform-runtime" "^7.0.0"
     "@babel/preset-env" "^7.0.0"
     "@babel/runtime" "^7.0.0"
+    "@babel/runtime-corejs2" "^7.2.0"
     babel-helper-vue-jsx-merge-props "^2.0.3"
     babel-plugin-dynamic-import-node "^2.2.0"
     babel-plugin-transform-vue-jsx "^4.0.1"
-    core-js "^2.5.7"
+    core-js "^2.6.1"
 
 "@vue/cli-overlay@^3.2.0":
   version "3.2.0"
@@ -740,12 +749,12 @@
   integrity sha512-RKMSfgTtRs4VOXQhmbrNZJaCCheshebji9NcPNGyXzukCMBtoAbu3cG9HxizCSUA//oFFAdPP5BGeHvv0cpu/A==
 
 "@vue/cli-plugin-babel@^3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-babel/-/cli-plugin-babel-3.2.0.tgz#5548e052f07512156942f50dcf18948ad29be7ec"
-  integrity sha512-HRhwsUIZ9DZYH+cVS8O0Qfk2W43vKpl5/JcvCS8YWWmRjwZjjHtRDifnfQuLC3Q0cUMTcv4bv8vnPMtkAbvXKg==
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-babel/-/cli-plugin-babel-3.2.2.tgz#2eab2e6fac657e8f2a5342418f0f6bc6538d251b"
+  integrity sha512-ya2UbXs3+Ac/qxnrdChhtM/0JBNifpeO05jL83Q31d3P+AHGp9psqVLHTdB9zReuHri5OAXSGUg1wpQUYNZyYQ==
   dependencies:
     "@babel/core" "^7.0.0"
-    "@vue/babel-preset-app" "^3.2.0"
+    "@vue/babel-preset-app" "^3.2.2"
     babel-loader "^8.0.4"
 
 "@vue/cli-plugin-eslint@^3.2.0":
@@ -2721,7 +2730,7 @@ copy-webpack-plugin@^4.6.0:
     p-limit "^1.0.0"
     serialize-javascript "^1.4.0"
 
-core-js@^2.4.0, core-js@^2.5.0, core-js@^2.5.7:
+core-js@^2.4.0, core-js@^2.5.0, core-js@^2.5.7, core-js@^2.6.1:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.1.tgz#87416ae817de957a3f249b3b5ca475d4aaed6042"
   integrity sha512-L72mmmEayPJBejKIWe2pYtGis5r0tQ5NaJekdhyXgeMQTpJoBsH0NL4ElY2LfSoV15xeQWKQ+XTTOZdyero5Xg==
