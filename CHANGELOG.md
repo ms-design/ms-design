@@ -1,3 +1,19 @@
+## [v0.0.5](https://github.com/ms-design/ms-design/compare/v0.0.4...v0.0.5) (2018-12-31)
+
+
+### Bug Fixes
+
+* **Icon:** move slot into property 'type' ([a5f631d](https://github.com/ms-design/ms-design/commit/a5f631d))
+* **Select:** too low the z-index of dropdown ([e426d93](https://github.com/ms-design/ms-design/commit/e426d93))
+
+
+### Features
+
+* **Select:** add the component with basic function ([78293eb](https://github.com/ms-design/ms-design/commit/78293eb)), closes [#10](https://github.com/ms-design/ms-design/issues/10)
+* **Slider:** add the component with basic function ([b904b91](https://github.com/ms-design/ms-design/commit/b904b91)), closes [#3](https://github.com/ms-design/ms-design/issues/3)
+
+
+
 ## [v0.0.4](https://github.com/ms-design/ms-design/compare/v0.0.3...v0.0.4) (2018-12-24)
 
 ### Bug Fixes
