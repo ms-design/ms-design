@@ -12,7 +12,7 @@ const rl = readline.createInterface({
 
 function main(internalVersion) {
   const changelogFile = 'CHANGELOG.md';
-  const tempFile = path.join(__dirname, '_temp', `${Math.random()}`.split('.')[1]);
+  const tempFile = path.join(__dirname, `_temp${Math.random()}`.split('.')[1]);
   cc({
     preset: 'angular',
     pkg: {
