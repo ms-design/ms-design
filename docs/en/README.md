@@ -18,7 +18,7 @@
         <img src="https://img.shields.io/codecov/c/github/ms-design/ms-design.svg?style=flat-square" alt="Coverage Status">
     </a>
     <a href="https://npmcharts.com/compare/ms-design?minimal=true">
-        <img src="https://img.shields.io/npm/dt/ms-design.svg?style=flat-square" alt="Downloads">
+        <img src="https://img.shields.io/npm/dm/ms-design.svg?style=flat-square" alt="Downloads">
     </a>
     <a href="https://www.npmjs.com/package/ms-design">
         <img src="https://img.shields.io/npm/v/ms-design.svg?style=flat-square" alt="Version">
@@ -65,7 +65,7 @@ Modern browsers and Internet Explorer 10+.
 
 ### Changelog
 
-Detailed changes for each release are documented in the [release notes](https://github.com/ms-design/ms-design/releases).
+Detailed changes for each release are documented in the [release notes](https://github.com/ms-design/ms-design/blob/master/CHANGELOG.md).
 
 ### Documentation
 
