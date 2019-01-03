@@ -23,6 +23,10 @@
  * @example
  * <Checbox></Checbox>
  */
+
+// 状态转移映射
+const STATE_TRANSITION_MAP = new Map([[0, 1], [1, 0], [2, 1]]);
+
 export default {
   name: 'Checkbox',
   props: {
@@ -54,7 +58,7 @@ export default {
   methods: {
     handleClick() {
       if (!this.disabled) {
-        const newChecked = Number(!this.checked);
+        const newChecked = STATE_TRANSITION_MAP.get(this.checked);
         this.$emit('change', newChecked);
       }
     }
