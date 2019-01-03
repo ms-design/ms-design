@@ -56,7 +56,7 @@ export default {
   data() {
     return {
       value1: 'apple',
-      value2: ''
+      value2: 'potato'
     };
   }
 };
