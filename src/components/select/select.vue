@@ -1,5 +1,7 @@
 <template>
   <div
+    v-click-outside.capture="handleClickOutside"
+    v-click-outside:mousedown.capture="handleClickOutside"
     class="ms-select"
     :class="{'ms-select_disabled': disabled}"
     @keydown.enter="handleEnter"
@@ -7,10 +9,11 @@
     @keydown.right.prevent="keyboardSelect(1)"
     @keydown.down.prevent="keyboardSelect(1)"
     @keydown.left.prevent="keyboardSelect(-1)"
-    v-click-outside.capture="handleClickOutside"
-    v-click-outside:mousedown.capture="handleClickOutside"
   >
-    <div class="ms-select__input" @click.stop="switchExpandOrCollapse()">
+    <div
+      class="ms-select__input"
+      @click.stop="switchExpandOrCollapse()"
+    >
       <input
         class="ms-select__input__inner"
         type="text"
@@ -33,16 +36,20 @@
     >
       <li
         v-for="(item, index) in dataList"
-        class="ms-select__dropdown__item"
         :key="item.value"
+        class="ms-select__dropdown__item"
         :class="{'focus': focusIndex === index}"
         @mousedown="handleItemMouseDown"
         @click.stop="handleItemSelect(item)"
-      >{{item.label}}</li>
+      >
+        {{ item.label }}
+      </li>
       <li
         v-if="dataList.length === 0"
         class="ms-select__dropdown__item ms-select__dropdown__item_disabled"
-      >暂无数据</li>
+      >
+        暂无数据
+      </li>
     </ul>
   </div>
 </template>
@@ -62,15 +69,15 @@ import Icon from '../icon';
  */
 export default {
   name: 'Select',
-  model: {
-    prop: 'value',
-    event: 'input'
-  },
   directives: {
     clickOutside
   },
   components: {
     Icon
+  },
+  model: {
+    prop: 'value',
+    event: 'input'
   },
   props: {
     value: {
@@ -93,12 +100,6 @@ export default {
       }
     }
   },
-  computed: {
-    currentLabel() {
-      const currentItem = this.dataList.find(item => item.value === this.value);
-      return (currentItem && currentItem.label) || '';
-    }
-  },
   data() {
     return {
       // 下拉列表是否展开
@@ -108,6 +109,12 @@ export default {
       // 不触发blur事件的锁
       noEmitBlur: false
     };
+  },
+  computed: {
+    currentLabel() {
+      const currentItem = this.dataList.find(item => item.value === this.value);
+      return (currentItem && currentItem.label) || '';
+    }
   },
   methods: {
     // 切换下拉列表是否展开

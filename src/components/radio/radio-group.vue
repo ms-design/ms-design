@@ -1,6 +1,6 @@
 <template>
   <div class="ms-radio-group">
-    <slot></slot>
+    <slot />
   </div>
 </template>
 <script>

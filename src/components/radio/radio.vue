@@ -1,10 +1,20 @@
 <template>
-  <div class="ms-radio" :class="statusClass" @click="handleClick">
-    <div class="ms-radio__icon" :class="statusClass">
-      <span class="ms-radio__icon_inner" :class="statusClass"></span>
+  <div
+    class="ms-radio"
+    :class="statusClass"
+    @click="handleClick"
+  >
+    <div
+      class="ms-radio__icon"
+      :class="statusClass"
+    >
+      <span
+        class="ms-radio__icon_inner"
+        :class="statusClass"
+      />
     </div>
     <span class="ms-radio__text">
-      <slot></slot>
+      <slot />
     </span>
   </div>
 </template>

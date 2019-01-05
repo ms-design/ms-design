@@ -22,6 +22,10 @@
  */
 export default {
   name: 'Input',
+  model: {
+    prop: 'value',
+    event: 'input'
+  },
   props: {
     disabled: {
       type: Boolean,
@@ -42,10 +46,6 @@ export default {
       type: String,
       default: ''
     }
-  },
-  model: {
-    prop: 'value',
-    event: 'input'
   },
   methods: {
     handleInput(event) {

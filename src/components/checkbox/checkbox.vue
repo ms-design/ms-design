@@ -1,14 +1,23 @@
 <template>
-  <div class="ms-checkbox-container" :class="statusClass" @click="handleClick">
-    <div class="ms-checkbox" :class="statusClass">
+  <div
+    class="ms-checkbox-container"
+    :class="statusClass"
+    @click="handleClick"
+  >
+    <div
+      class="ms-checkbox"
+      :class="statusClass"
+    >
+      <!-- eslint-disable vue/no-v-html -->
       <span
         class="ms-checkbox__icon"
         :class="statusClass"
         v-html="checked === 2 ? '' : '\uE001'"
-      ></span>
+      />
+      <!-- eslint-enable -->
     </div>
     <div class="ms-checkbox__slot">
-      <slot></slot>
+      <slot />
     </div>
   </div>
 </template>
@@ -29,6 +38,10 @@ const STATE_TRANSITION_MAP = new Map([[0, 1], [1, 0], [2, 1]]);
 
 export default {
   name: 'Checkbox',
+  model: {
+    prop: 'checked',
+    event: 'change'
+  },
   props: {
     disabled: {
       type: Boolean,
@@ -41,10 +54,6 @@ export default {
         return [0, 1, 2].includes(value);
       }
     }
-  },
-  model: {
-    prop: 'checked',
-    event: 'change'
   },
   computed: {
     statusClass() {

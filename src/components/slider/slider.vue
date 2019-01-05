@@ -1,6 +1,11 @@
 <template>
   <div class="ms-slider">
-    <div v-if="!isIE" class="ms-slider__progress" :class="statusClass" :style="progressStyle"></div>
+    <div
+      v-if="!isIE"
+      class="ms-slider__progress"
+      :class="statusClass"
+      :style="progressStyle"
+    />
     <input
       class="ms-slider__input"
       :class="statusClass"

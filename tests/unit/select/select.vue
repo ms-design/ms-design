@@ -1,8 +1,15 @@
 <template>
   <div class="select-test">
-    <Select v-model="value" :disabled="disabled" :dataList="dataList"/>
-    <hr />
-    <div ref="other" class="other"></div>
+    <Select
+      v-model="value"
+      :disabled="disabled"
+      :data-list="dataList"
+    />
+    <hr>
+    <div
+      ref="other"
+      class="other"
+    />
   </div>
 </template>
 <script>
