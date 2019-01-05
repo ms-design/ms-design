@@ -2,31 +2,31 @@
   <div class="ms-slider">
     <div v-if="!isIE" class="ms-slider__progress" :class="statusClass" :style="progressStyle"></div>
     <input
-      class="ms-slider__input"
-      :class="statusClass"
-      :disabled="disabled"
-      :min="min"
-      :max="max"
-      :value="value"
-      type="range"
-      @input="handleInput"
-      @change="handleChange"
+     class="ms-slider__input"
+     :class="statusClass"
+     :disabled="disabled"
+     :min="min"
+     :max="max"
+     :value="value"
+     type="range"
+     @input="handleInput"
+     @change="handleChange"
     >
   </div>
 </template>
 <script>
 /**
- * Slider
- * @module components/slider
- * @desc   滑动条
- * @param  {String|Number} value     - 当前滑块所在刻度, 支持v-model
- * @param  {Boolean}       disabled  - 是否禁用
- * @param  {String|Number} step      - 步长
- * @param  {String|Number} min       - 最小值
- * @param  {String|Number} max       - 最大值
- * @example
- * <Slider v-model="value"></Slider>
- */
+     * Slider
+     * @module components/slider
+     * @desc   滑动条
+     * @param  {String|Number} value     - 当前滑块所在刻度, 支持v-model
+     * @param  {Boolean}       disabled  - 是否禁用
+     * @param  {String|Number} step      - 步长
+     * @param  {String|Number} min       - 最小值
+     * @param  {String|Number} max       - 最大值
+     * @example
+     * <Slider v-model="value"></Slider>
+     */
 export default {
   name: 'Slider',
   model: {
@@ -71,8 +71,8 @@ export default {
     isIE() {
       return (
         !!window.ActiveXObject
-        || 'ActiveXObject' in window
-        || navigator.userAgent.indexOf('Edge') > -1
+          || 'ActiveXObject' in window
+          || navigator.userAgent.indexOf('Edge') > -1
       );
     },
     progressStyle() {
@@ -98,124 +98,127 @@ export default {
 };
 </script>
 <style lang="less">
-@import '~@/assets/styles/variable.less';
+  @import '~@/assets/styles/variable.less';
 
-.thumb-common-style() {
-  position: relative;
-  z-index: 3;
-  width: 8px;
-  height: 24px;
-  border-radius: 4px;
-  transform: translateY(-5px);
-  background-color: @primary-color;
-  cursor: grab;
-  transition: all 0.25s;
-  &:active {
-    cursor: grabbing;
-  }
-}
-
-.track-common-style() {
-  width: 100%;
-  height: 2px;
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 1px;
-  cursor: pointer;
-}
-
-.ms-slider {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 24px;
-  &__progress {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto auto;
-    border-radius: 1px;
-    height: 2px;
-    background-color: @primary-color;
-    z-index: 1;
-    &.disabled {
-      background-color: #c4c4c4;
-      cursor: not-allowed;
-    }
-  }
-  &__input {
+  .thumb-common-style() {
     position: relative;
-    margin: 0 0;
-    padding: 0 0;
-    width: 100%;
-    height: 100%;
-    overflow: visible;
-    -webkit-appearance: none;
+    z-index: 3;
+    width: 8px;
+    height: 24px;
+    border-radius: 4px;
+    transform: translateY(-5px);
+    background-color: @primary-color;
+    cursor: grab;
+    transition: all 0.25s;
     &:active {
       cursor: grabbing;
     }
-    &:focus {
-      outline: none;
-    }
-    &::-webkit-slider-thumb {
-      .thumb-common-style();
-      margin-top: -6px;
-      -webkit-appearance: none;
-    }
-    &::-moz-range-thumb {
-      .thumb-common-style();
-      transform: translateZ(1px);
-    }
-    &::-ms-thumb {
-      .thumb-common-style();
-    }
-    &::-webkit-slider-runnable-track {
-      .track-common-style();
-    }
-    &::-moz-range-track {
-      .track-common-style();
-    }
-    &::-ms-track {
-      width: 100%;
-      height: 6px;
-      cursor: pointer;
-      background: transparent;
-      border-color: transparent;
-      border-width: 16px 0;
-      color: transparent;
-    }
-    &::-ms-fill-lower {
-      background: @primary-color;
-      border-radius: 3px;
-    }
-    &::-ms-fill-upper {
-      background: #c4c4c4;
-      border-radius: 3px;
-    }
-    &.disabled {
-      cursor: not-allowed;
-      &::-webkit-slider-thumb {
+  }
+
+  .track-common-style() {
+    width: 100%;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 1px;
+    cursor: pointer;
+  }
+
+  .ms-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 24px;
+    &__progress {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto auto;
+      border-radius: 1px;
+      height: 2px;
+      background-color: @primary-color;
+      z-index: 1;
+      &.disabled {
         background-color: #c4c4c4;
         cursor: not-allowed;
+      }
+    }
+    &__input {
+      position: relative;
+      margin: 0 0;
+      padding: 0 0;
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      -webkit-appearance: none;
+      &:active {
+        cursor: grabbing;
+      }
+      &:focus {
+        outline: none;
+      }
+      &::-webkit-slider-thumb {
+        .thumb-common-style();
+        margin-top: -6px;
+        -webkit-appearance: none;
       }
       &::-moz-range-thumb {
-        background-color: #c4c4c4;
-        cursor: not-allowed;
+        .thumb-common-style();
+        transform: translateZ(1px);
       }
       &::-ms-thumb {
-        background-color: #c4c4c4;
-        cursor: not-allowed;
+        .thumb-common-style();
+        transform: translateY(3px); //IE下的thumb偏移量需要重新计算
       }
       &::-webkit-slider-runnable-track {
-        cursor: not-allowed;
+        .track-common-style();
       }
       &::-moz-range-track {
-        cursor: not-allowed;
+        .track-common-style();
       }
       &::-ms-track {
+        //IE下的track样式与其他浏览器不一样，不能使用track-common-style
+        width: 100%;
+        height: 2px;
+        cursor: pointer;
+        border-radius: 1px;
+        color: transparent;
+      }
+      &::-ms-fill-lower {
+        background: @primary-color;
+        border-radius: 3px;
+      }
+      &::-ms-fill-upper {
+        background: #c4c4c4;
+        border-radius: 3px;
+      }
+      &.disabled {
         cursor: not-allowed;
+        &::-webkit-slider-thumb {
+          background-color: #c4c4c4;
+          cursor: not-allowed;
+        }
+        &::-moz-range-thumb {
+          background-color: #c4c4c4;
+          cursor: not-allowed;
+        }
+        &::-ms-thumb {
+          background-color: #c4c4c4;
+          cursor: not-allowed;
+        }
+        &::-webkit-slider-runnable-track {
+          cursor: not-allowed;
+        }
+        &::-moz-range-track {
+          cursor: not-allowed;
+        }
+        &::-ms-track {
+          cursor: not-allowed;
+        }
+        &::-ms-fill-lower {
+          background: #c4c4c4; //IE下，disabled状态时 track左边颜色不是灰色，需要手动置灰
+        }
       }
     }
   }
-}
 </style>

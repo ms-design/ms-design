@@ -7,6 +7,9 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    // 'no-tabs': 'off',
+    // 'no-mixed-spaces-and-tabs': 'off',
+    indent: ['error', 2],
     // 最后一行禁止使用逗号
     'comma-dangle': ['error', 'never'],
     // 函数表达式不予许命名
