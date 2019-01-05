@@ -72,7 +72,7 @@ export default {
   align-items: center;
   width: 20px;
   height: 20px;
-  border: 2px solid rgba(0, 0, 0, 0.8);
+  border: 1.5px solid rgba(0, 0, 0, 0.8);
   border-radius: 50%;
   overflow: hidden;
   transition: all 0.3s;
@@ -92,7 +92,7 @@ export default {
   opacity: 0;
   transition: all 0.3s;
   &.checked {
-    transform: scale(0.8);
+    transform: scale(0.85);
     opacity: 1;
   }
   &.disabled {

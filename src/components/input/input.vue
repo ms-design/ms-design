@@ -74,18 +74,18 @@ export default {
   align-items: center;
   color: #000;
   background: none;
-  box-shadow: inset 0px 0px 0 2px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 0px 0 1px rgba(0, 0, 0, 0.5);
   border: none;
   transition: all 0.25s;
   outline: none;
   &:hover:not(:disabled) {
-    box-shadow: inset 0px 0px 0 2px @primary-color;
+    box-shadow: inset 0px 0px 0 1px @primary-color;
   }
   &:focus {
-    box-shadow: inset 0px 0px 0 2px @primary-color;
+    box-shadow: inset 0px 0px 0 1px @primary-color;
   }
   &:disabled {
-    box-shadow: inset 0px 0px 0 2px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 0px 0 1px rgba(0, 0, 0, 0.2);
     cursor: not-allowed;
   }
   @media screen and (max-width: 419px) {
