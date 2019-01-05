@@ -194,6 +194,7 @@ export default {
     }
     &.disabled {
       cursor: not-allowed;
+      background-color: transparent;
       &::-webkit-slider-thumb {
         background-color: #c4c4c4;
         cursor: not-allowed;
