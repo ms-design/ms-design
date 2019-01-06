@@ -25,7 +25,7 @@
     "commit-msg": "node scripts/verify-commit-msg.js"
   },
   "lint-staged": {
-    "*.js": [
+    "*.{js,vue}": [
       "yarn run lint",
       "git add"
     ]
