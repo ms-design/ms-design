@@ -25,7 +25,7 @@
     "commit-msg": "node scripts/verify-commit-msg.js"
   },
   "lint-staged": {
-    "*.js": [
+    "*.{js,vue}": [
       "yarn run lint",
       "git add"
     ]
@@ -49,16 +49,16 @@
   },
   "dependencies": {
     "clipboard": "^2.0.4",
-    "v-click-outside-x": "^3.5.6",
+    "v-click-outside-x": "^3.6.0",
     "vue": "^2.5.21"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.2.0",
-    "@vue/cli-plugin-eslint": "^3.2.0",
-    "@vue/cli-plugin-unit-jest": "^3.2.0",
-    "@vue/cli-service": "^3.2.0",
+    "@vue/cli-plugin-babel": "^3.2.2",
+    "@vue/cli-plugin-eslint": "^3.2.2",
+    "@vue/cli-plugin-unit-jest": "^3.2.3",
+    "@vue/cli-service": "^3.2.3",
     "@vue/eslint-config-airbnb": "^4.0.0",
-    "@vue/test-utils": "^1.0.0-beta.27",
+    "@vue/test-utils": "^1.0.0-beta.28",
     "@vuepress/plugin-back-to-top": "^1.0.0-alpha.30",
     "@vuepress/plugin-google-analytics": "^1.0.0-alpha.30",
     "@vuepress/plugin-pwa": "^1.0.0-alpha.30",
@@ -66,17 +66,17 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
-    "chalk": "^2.4.1",
+    "chalk": "^2.4.2",
     "codecov": "^3.1.0",
     "commitizen": "^3.0.5",
     "conventional-changelog": "^3.0.5",
     "cz-conventional-changelog": "^2.1.0",
-    "eslint": "^5.10.0",
-    "eslint-plugin-vue": "^5.0.0",
+    "eslint": "^5.12.0",
+    "eslint-plugin-vue": "^5.1.0",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
     "lint-staged": "^8.1.0",
-    "rimraf": "^2.6.2",
+    "rimraf": "^2.6.3",
     "vue-template-compiler": "^2.5.21",
     "vuepress": "^1.0.0-alpha.30"
   },
