@@ -1,8 +1,8 @@
 <template>
   <div
     class="ms-tooltip"
-    @mouseover="showTooltip"
-    @mouseout="hideTooltip"
+    @mouseenter="showTooltip"
+    @mouseleave="hideTooltip"
   >
     <div
       :class="popoverClasses"
@@ -113,7 +113,7 @@ export default {
     },
     // 提示框渐变动画样式
     transitionStyle() {
-      return this.transition ? 'transition: all .25s 0s ease-in-out' : '';
+      return this.transition ? 'transition: all .25s ease-in-out' : '';
     },
     style() {
       return `${this.offsetStyle};${this.transitionStyle}`;
