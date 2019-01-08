@@ -70,6 +70,12 @@ module.exports = {
               '/components/toggle.md',
               '/components/slider.md'
             ]
+          }, {
+            title: 'View 视图',
+            collapsable: false,
+            children: [
+              '/components/tooltip.md'
+            ]
           }
         ]
       },
@@ -91,6 +97,12 @@ module.exports = {
               '/components/select.md',
               '/components/toggle.md',
               '/components/slider.md'
+            ]
+          }, {
+            title: 'View',
+            collapsable: false,
+            children: [
+              '/components/tooltip.md'
             ]
           }
         ]
