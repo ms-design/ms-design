@@ -25,10 +25,14 @@ describe('default tooltip', () => {
     }, 0);
   });
   // 鼠标离开会触发hide事件
-  it('emits the hide event when mouseleaving', () => {
+  it('emits the hide event when mouseleaving', done => {
     const wrapper = shallowMount(Tooltip);
-    wrapper.trigger('mouseleave');
-    expect(wrapper.emitted('hide')).toBeTruthy();
+    wrapper.trigger('mouseenter');
+    setTimeout(() => {
+      wrapper.trigger('mouseleave');
+      expect(wrapper.emitted('hide')).toBeTruthy();
+      done();
+    }, 0);
   });
 });
 

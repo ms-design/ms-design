@@ -130,8 +130,10 @@ export default {
     // 显示提示框
     showTooltip() {
       this.isMouseHover = true;
+      // 清除可能存在定时器
+      clearTimeout(this.timeoutID);
       if (!this.disabled) {
-        setTimeout(() => {
+        this.timeoutID = setTimeout(() => {
           // 只有当鼠标hover时, 延迟显示才有效
           if (this.isMouseHover) {
             this.isShowTooltip = true;
@@ -143,7 +145,7 @@ export default {
     // 隐藏提示框
     hideTooltip() {
       this.isMouseHover = false;
-      if (!this.disabled) {
+      if (!this.disabled && this.isShowTooltip) {
         this.isShowTooltip = false;
         this.$emit('hide');
       }
