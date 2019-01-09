@@ -103,21 +103,31 @@ describe('tooltip with different placement', () => {
 // 带渐变动画的文字提示
 describe('tooltip with transition', () => {
   // 渐变动画开启
-  it('transition true', () => {
+  it('transition true', done => {
     const wrapper = shallowMount(Tooltip, {
       propsData: {
-        transition: true
+        transition: true,
+        content: 'tips...'
       }
     });
     wrapper.trigger('mouseenter');
+    setTimeout(() => {
+      expect(wrapper.vm.transitionStyle).toEqual('transition: all .25s ease-in-out');
+      done();
+    }, 0);
   });
   // 渐变动画关闭
-  it('transition false', () => {
+  it('transition false', done => {
     const wrapper = shallowMount(Tooltip, {
       propsData: {
-        transition: false
+        transition: false,
+        content: 'tips...'
       }
     });
     wrapper.trigger('mouseenter');
+    setTimeout(() => {
+      expect(wrapper.vm.transitionStyle).toEqual('');
+      done();
+    }, 0);
   });
 });
