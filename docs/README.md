@@ -7,7 +7,7 @@
 <h1 align="center" style="text-align:center;">MS Design</h1>
 
 <p align="center" style="text-align:center;margin: 10px 0;">
-    基于微软 <a href="https://fluent.microsoft.com/">Fluent Design</a> 设计的 <a href="https://vuejs.org/">Vue</a> 组件库
+    基于微软设计语言的 <a href="https://vuejs.org/">Vue</a> 组件库
 </p>
 
 <p align="center" style="text-align:center;">

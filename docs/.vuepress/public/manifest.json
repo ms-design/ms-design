@@ -5,7 +5,7 @@
   "display": "fullscreen",
   "background_color": "#fff",
   "theme_color": "#0078d4",
-  "description": "Vue components that implement Microsoft's Fluent Design",
+  "description": "Vue components that implement Microsoft Design Language",
   "icons": [
     {
       "src": "images/homescreen72.png",

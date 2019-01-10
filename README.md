@@ -7,7 +7,7 @@
 <h1 align="center" style="text-align:center;">MS Design</h1>
 
 <p align="center" style="text-align:center;">
-    <a href="https://vuejs.org/">Vue</a> components that implement <a href="https://fluent.microsoft.com/">Microsoft's Fluent Design</a>
+    <a href="https://vuejs.org/">Vue</a> components that implement Microsoft Design Language
 </p>
 
 <p align="center" style="text-align:center;">
