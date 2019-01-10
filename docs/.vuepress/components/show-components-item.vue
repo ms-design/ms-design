@@ -1,6 +1,6 @@
 <template>
   <div class="show-components-item">
-    <label class="show-components-item__label">{{label}}</label>
+    <label v-if="label !== ''" class="show-components-item__label">{{label}}</label>
     <div class="show-components-item__component" :class="{'horizental': horizental}">
       <slot></slot>
     </div>
@@ -11,7 +11,7 @@ export default {
   props: {
     label: {
       type: String,
-      default: '组件'
+      default: ''
     },
     horizental: {
       type: Boolean,

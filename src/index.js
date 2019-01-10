@@ -7,6 +7,7 @@ import Icon from './components/icon';
 import Select from './components/select';
 import Slider from './components/slider';
 import Toggle from './components/toggle';
+import Tooltip from './components/tooltip';
 
 const components = {
   Button,
@@ -17,7 +18,8 @@ const components = {
   Icon,
   Select,
   Slider,
-  Toggle
+  Toggle,
+  Tooltip
 };
 
 const install = function(Vue) {
