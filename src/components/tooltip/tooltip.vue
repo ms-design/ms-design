@@ -66,8 +66,8 @@ export default {
       type: String,
       default: 'top',
       validator(value) {
-        // 必须是预设的八种位置之一
-        return PLACEMENTS.includes(value);
+        // 必须是预设的八种位置之一或者是空字符串
+        return PLACEMENTS.includes(value) || value === '';
       }
     },
     transition: {

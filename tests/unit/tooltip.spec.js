@@ -65,7 +65,7 @@ describe('disabled tooltip', () => {
 
 // 不同placement属性的文字提示
 describe('tooltip with different placement', () => {
-  const PLACEMENTS = ['top-left', 'top', 'top-right', 'right', 'bottom-right', 'bottom', 'bottom-left', 'left'];
+  const PLACEMENTS = ['', 'top-left', 'top', 'top-right', 'right', 'bottom-right', 'bottom', 'bottom-left', 'left'];
   function getTransformStyle(placement, offset) {
     switch (placement) {
     case 'top':
