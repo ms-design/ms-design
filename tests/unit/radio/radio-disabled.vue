@@ -1,8 +1,26 @@
 <template>
-  <RadioGroup v-model="value" @change="handleChange">
-    <Radio value="label1" :disabled="true">label1</Radio>
-    <Radio value="label2" :disabled="true">label2</Radio>
-    <Radio value="label3" :disabled="true">label3</Radio>
+  <RadioGroup
+    v-model="value"
+    @change="handleChange"
+  >
+    <Radio
+      value="label1"
+      :disabled="true"
+    >
+      label1
+    </Radio>
+    <Radio
+      value="label2"
+      :disabled="true"
+    >
+      label2
+    </Radio>
+    <Radio
+      value="label3"
+      :disabled="true"
+    >
+      label3
+    </Radio>
   </RadioGroup>
 </template>
 <script>

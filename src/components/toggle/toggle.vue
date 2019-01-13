@@ -1,6 +1,12 @@
 <template>
-  <label class="ms-toggle" @click.prevent="handleClick">
-    <span class="ms-toggle__button" :class="statusClass"></span>
+  <label
+    class="ms-toggle"
+    @click.prevent="handleClick"
+  >
+    <span
+      class="ms-toggle__button"
+      :class="statusClass"
+    />
   </label>
 </template>
 <script>
@@ -16,6 +22,10 @@
  */
 export default {
   name: 'Toggle',
+  model: {
+    prop: 'checked',
+    event: 'change'
+  },
   props: {
     checked: {
       type: Boolean,
@@ -25,10 +35,6 @@ export default {
       type: Boolean,
       default: false
     }
-  },
-  model: {
-    prop: 'checked',
-    event: 'change'
   },
   computed: {
     statusClass() {

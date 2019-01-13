@@ -1,5 +1,12 @@
 <template>
-  <span class="ms-icon" :style="style" v-html="iconContent" @click="handleClick"></span>
+  <!-- eslint-disable vue/no-v-html -->
+  <span
+    class="ms-icon"
+    :style="style"
+    @click="handleClick"
+    v-html="iconContent"
+  />
+  <!-- eslint-enable -->
 </template>
 <script>
 import iconList from './iconList';

@@ -42,11 +42,11 @@ module.exports = {
   locales: {
     '/': {
       lang: 'zh-CN',
-      description: '基于微软Fluent Design设计的Vue组件库'
+      description: '基于微软设计语言的Vue组件库'
     },
     '/en/': {
       lang: 'en-US',
-      description: 'Vue components that implement Microsoft\'s Fluent Design'
+      description: 'Vue components that implement Microsoft Design Language'
     }
   },
   themeConfig: {
@@ -70,6 +70,12 @@ module.exports = {
               '/components/toggle.md',
               '/components/slider.md'
             ]
+          }, {
+            title: 'View 视图',
+            collapsable: false,
+            children: [
+              '/components/tooltip.md'
+            ]
           }
         ]
       },
@@ -91,6 +97,12 @@ module.exports = {
               '/components/select.md',
               '/components/toggle.md',
               '/components/slider.md'
+            ]
+          }, {
+            title: 'View',
+            collapsable: false,
+            children: [
+              '/components/tooltip.md'
             ]
           }
         ]

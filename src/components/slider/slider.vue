@@ -1,6 +1,11 @@
 <template>
   <div class="ms-slider">
-    <div v-if="!isIE" class="ms-slider__progress" :class="statusClass" :style="progressStyle"></div>
+    <div
+      v-if="!isIE"
+      class="ms-slider__progress"
+      :class="statusClass"
+      :style="progressStyle"
+    />
     <input
       class="ms-slider__input"
       :class="statusClass"
@@ -168,6 +173,7 @@ export default {
     }
     &::-ms-thumb {
       .thumb-common-style();
+      transform: translateY(3px); //IE下的thumb偏移量需要重新计算
     }
     &::-webkit-slider-runnable-track {
       .track-common-style();
@@ -176,12 +182,11 @@ export default {
       .track-common-style();
     }
     &::-ms-track {
+      //IE下的track样式与其他浏览器不一样，不能使用track-common-style
       width: 100%;
-      height: 6px;
+      height: 2px;
       cursor: pointer;
-      background: transparent;
-      border-color: transparent;
-      border-width: 16px 0;
+      border-radius: 1px;
       color: transparent;
     }
     &::-ms-fill-lower {
@@ -194,6 +199,7 @@ export default {
     }
     &.disabled {
       cursor: not-allowed;
+      background-color: transparent;
       &::-webkit-slider-thumb {
         background-color: #c4c4c4;
         cursor: not-allowed;
@@ -214,6 +220,9 @@ export default {
       }
       &::-ms-track {
         cursor: not-allowed;
+      }
+      &::-ms-fill-lower {
+        background: #c4c4c4; //IE下，disabled状态时 track左边颜色不是灰色，需要手动置灰
       }
     }
   }

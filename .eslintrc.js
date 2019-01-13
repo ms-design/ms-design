@@ -3,10 +3,12 @@ module.exports = {
   env: {
     node: true
   },
-  extends: ['plugin:vue/essential', '@vue/airbnb'],
+  extends: ['plugin:vue/recommended', '@vue/airbnb'],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    // 强制缩进2个空格
+    indent: ['error', 2],
     // 最后一行禁止使用逗号
     'comma-dangle': ['error', 'never'],
     // 函数表达式不予许命名
@@ -23,7 +25,8 @@ module.exports = {
       {
         ignore: ['@/']
       }
-    ]
+    ],
+    'vue/script-indent': 'error'
   },
   parserOptions: {
     parser: 'babel-eslint'
