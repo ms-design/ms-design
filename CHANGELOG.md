@@ -1,3 +1,18 @@
+## [v0.0.6](https://github.com/ms-design/ms-design/compare/v0.0.5...v0.0.6) (2019-01-13)
+
+
+### Bug Fixes
+
+* **Checkbox:** rectify uncorrect model of state transition ([5380d97](https://github.com/ms-design/ms-design/commit/5380d97)), closes [#21](https://github.com/ms-design/ms-design/issues/21)
+* **Slider:** fix a display-error on Edge ([06cf1a8](https://github.com/ms-design/ms-design/commit/06cf1a8)) and on Firefox  ([e52884a](https://github.com/ms-design/ms-design/commit/e52884a)), closes [#20](https://github.com/ms-design/ms-design/issues/20)
+
+
+### Features
+
+* **Tooltip:** add the component with basic function ([468df9a](https://github.com/ms-design/ms-design/commit/468df9a))
+
+
+
 ## [v0.0.5](https://github.com/ms-design/ms-design/compare/v0.0.4...v0.0.5) (2018-12-31)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "ms-design",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Vue components that implement Microsoft Design Language",
   "main": "lib/ms-design.common.js",
   "files": [
