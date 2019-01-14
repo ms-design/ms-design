@@ -73,6 +73,13 @@ Detailed changes for each release are documented in the [release notes](https://
 
 Check out our [documentation website](https://ms-design.github.io/).
 
+## Major Contributors
+| Github ID | Avatar |
+| ------------ | ------------ |
+| [pyyzcwg2833](https://github.com/pyyzcwg2833 "pyyzcwg2833") | ![pyyzcwg2833](https://avatars3.githubusercontent.com/u/24390069?s=60&v=4 "pyyzcwg2833") |
+| [zysallen](https://github.com/zysallen "zysallen") | ![zysallen](https://avatars3.githubusercontent.com/u/23287111?s=60&v=4 "zysallen") |
+| [CirnoBreak](https://github.com/CirnoBreak "CirnoBreak") | ![CirnoBreak](https://avatars3.githubusercontent.com/u/18510256?s=60&v=4 "CirnoBreak") |
+
 ## Licence
 
 This project is licensed under the terms of the MIT license.

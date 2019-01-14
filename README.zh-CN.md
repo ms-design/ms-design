@@ -73,6 +73,13 @@ Vue.use(msd);
 
 详情请查看[文档网站](https://ms-design.github.io/)
 
+## 开发者名单
+| Github ID | 头像 |
+| ------------ | ------------ |
+| [pyyzcwg2833](https://github.com/pyyzcwg2833 "pyyzcwg2833") | ![pyyzcwg2833](https://avatars3.githubusercontent.com/u/24390069?s=60&v=4 "pyyzcwg2833") |
+| [zysallen](https://github.com/zysallen "zysallen") | ![zysallen](https://avatars3.githubusercontent.com/u/23287111?s=60&v=4 "zysallen") |
+| [CirnoBreak](https://github.com/CirnoBreak "CirnoBreak") | ![CirnoBreak](https://avatars3.githubusercontent.com/u/18510256?s=60&v=4 "CirnoBreak") |
+
 ### 许可证
 
 本项目使用MIT许可证
