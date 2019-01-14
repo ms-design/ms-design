@@ -1,3 +1,5 @@
+English | [简体中文](./CHANGELOG.zh-CN.md)
+
 ## [v0.0.6](https://github.com/ms-design/ms-design/compare/v0.0.5...v0.0.6) (2019-01-13)
 
 
@@ -38,7 +40,6 @@
 ### Features
 
 * **Radio:** add the component with basic function ([4c9c06b](https://github.com/ms-design/ms-design/commits/4c9c06b))
-* **Radio:** improve Radio's function with RadioGroup ([126cce2](https://github.com/ms-design/ms-design/commits/126cce2))
 
 ## [v0.0.3](https://github.com/ms-design/ms-design/releases/tag/v0.0.3) (2018-12-24)
 

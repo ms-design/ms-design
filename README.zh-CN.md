@@ -1,4 +1,4 @@
-English | [简体中文](./README.zh-CN.md)
+[English](./README.md) | 简体中文
 
 <p align="center" style="text-align:center;">
     <a href="https://ms-design.github.io/">
@@ -8,8 +8,8 @@ English | [简体中文](./README.zh-CN.md)
 
 <h1 align="center" style="text-align:center;">MS Design</h1>
 
-<p align="center" style="text-align:center;">
-    <a href="https://vuejs.org/">Vue</a> components that implement Microsoft Design Language
+<p align="center" style="text-align:center;margin: 10px 0;">
+    基于微软设计语言的 <a href="https://cn.vuejs.org/">Vue</a> 组件库
 </p>
 
 <p align="center" style="text-align:center;">
@@ -39,9 +39,9 @@ English | [简体中文](./README.zh-CN.md)
     </a>
 </p>
 
-## Installation
+### 安装
 
-MS Design is available as an [npm package](https://www.npmjs.com/package/ms-design)
+使用 npm 或 yarn 来安装 MS Design
 
 ```bash
 # with npm
@@ -51,7 +51,7 @@ npm install ms-design -S
 yarn add ms-design
 ```
 
-## Usage
+### 使用
 
 ```javascript
 import Vue from 'vue';
@@ -61,18 +61,18 @@ import 'ms-design/lib/ms-design.css';
 Vue.use(msd);
 ```
 
-## Browser Support
+### 浏览器支持
 
-Modern browsers and Internet Explorer 10+.
+支持IE10及以上的现代主流浏览器
 
-## Changelog
+### 更新日志
 
-Detailed changes for each release are documented in the [release notes](https://github.com/ms-design/ms-design/blob/master/CHANGELOG.md).
+详情请查看[更新日志](https://github.com/ms-design/ms-design/blob/master/CHANGELOG.zh-CN.md)
 
-## Documentation
+### 文档
 
-Check out our [documentation website](https://ms-design.github.io/).
+详情请查看[文档网站](https://ms-design.github.io/)
 
-## Licence
+### 许可证
 
-This project is licensed under the terms of the MIT license.
+本项目使用MIT许可证
