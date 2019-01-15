@@ -80,6 +80,14 @@ Check out our [documentation website](https://ms-design.github.io/).
 | [zysallen](https://github.com/zysallen "zysallen") | ![zysallen](https://avatars3.githubusercontent.com/u/23287111?s=60&v=4 "zysallen") |
 | [CirnoBreak](https://github.com/CirnoBreak "CirnoBreak") | ![CirnoBreak](https://avatars3.githubusercontent.com/u/18510256?s=60&v=4 "CirnoBreak") |
 
+## Join Discusion Group
+
+Scan the QR code using [QQ](https://im.qq.com/) or [Wechat](https://weixin.qq.com/) to join in discusion group.
+
+| QQ | Wechat |
+| ------------ | ------------ |
+| <img src="https://download-1252831689.file.myqcloud.com/ms-design/qq.png" alt="Join Discusion Group on QQ"  width="300" height="450"> | <img src="https://download-1252831689.file.myqcloud.com/ms-design/wechat.png" alt="Join Discusion Group on Wechat" width="300" height="450"> |
+
 ## Licence
 
 This project is licensed under the terms of the MIT license.

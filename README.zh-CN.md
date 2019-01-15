@@ -39,7 +39,7 @@
     </a>
 </p>
 
-### 安装
+## 安装
 
 使用 npm 或 yarn 来安装 MS Design
 
@@ -51,7 +51,7 @@ npm install ms-design -S
 yarn add ms-design
 ```
 
-### 使用
+## 使用
 
 ```javascript
 import Vue from 'vue';
@@ -61,15 +61,15 @@ import 'ms-design/lib/ms-design.css';
 Vue.use(msd);
 ```
 
-### 浏览器支持
+## 浏览器支持
 
 支持IE10及以上的现代主流浏览器
 
-### 更新日志
+## 更新日志
 
 详情请查看[更新日志](https://github.com/ms-design/ms-design/blob/master/CHANGELOG.zh-CN.md)
 
-### 文档
+## 文档
 
 详情请查看[文档网站](https://ms-design.github.io/)
 
@@ -80,6 +80,14 @@ Vue.use(msd);
 | [zysallen](https://github.com/zysallen "zysallen") | ![zysallen](https://avatars3.githubusercontent.com/u/23287111?s=60&v=4 "zysallen") |
 | [CirnoBreak](https://github.com/CirnoBreak "CirnoBreak") | ![CirnoBreak](https://avatars3.githubusercontent.com/u/18510256?s=60&v=4 "CirnoBreak") |
 
-### 许可证
+## 群组讨论
+
+请扫描以下QQ或微信二维码进群讨论
+
+| QQ | 微信 |
+| ------------ | ------------ |
+| <img src="https://download-1252831689.file.myqcloud.com/ms-design/qq.png" alt="Join Discusion Group on QQ"  width="300" height="450"> | <img src="https://download-1252831689.file.myqcloud.com/ms-design/wechat.png" alt="Join Discusion Group on Wechat" width="300" height="450"> |
+
+## 许可证
 
 本项目使用MIT许可证
