@@ -82,11 +82,11 @@ Check out our [documentation website](https://ms-design.github.io/).
 
 ## Join Discusion Group
 
-Scan the QR code using [QQ](https://im.qq.com/) or [Wechat](https://weixin.qq.com/) to join in discusion group.
+Scan the QR code using [QQ](https://im.qq.com/) or [Wechat](https://weixin.qq.com/) to join in discusion group, or click on the link to join the chat room on Gitter.
 
-| QQ | Wechat |
-| ------------ | ------------ |
-| <img src="https://download-1252831689.file.myqcloud.com/ms-design/qq.png" alt="Join Discusion Group on QQ"  width="300" height="450"> | <img src="https://download-1252831689.file.myqcloud.com/ms-design/wechat.png" alt="Join Discusion Group on Wechat" width="300" height="450"> |
+| QQ | Wechat | Gitter |
+| ------------ | ------------ | ------------ |
+| <img src="https://download-1252831689.file.myqcloud.com/ms-design/qq.png" alt="Join Discusion Group on QQ"  width="300" height="450"> | <img src="https://download-1252831689.file.myqcloud.com/ms-design/wechat.png" alt="Join Discusion Group on Wechat" width="300" height="450"> | <a href="https://gitter.im/ms-design/ms-design">Chat on Gitter</a> |
 
 ## Licence
 

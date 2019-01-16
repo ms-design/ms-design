@@ -82,11 +82,11 @@ Vue.use(msd);
 
 ## 群组讨论
 
-请扫描以下QQ或微信二维码进群讨论
+请扫描以下QQ或微信二维码进群讨论, 或点击链接加入Gitter聊天室
 
-| QQ | 微信 |
-| ------------ | ------------ |
-| <img src="https://download-1252831689.file.myqcloud.com/ms-design/qq.png" alt="Join Discusion Group on QQ"  width="300" height="450"> | <img src="https://download-1252831689.file.myqcloud.com/ms-design/wechat.png" alt="Join Discusion Group on Wechat" width="300" height="450"> |
+| QQ | 微信 | Gitter |
+| ------------ | ------------ | ------------ |
+| <img src="https://download-1252831689.file.myqcloud.com/ms-design/qq.png" alt="Join Discusion Group on QQ"  width="300" height="450"> | <img src="https://download-1252831689.file.myqcloud.com/ms-design/wechat.png" alt="Join Discusion Group on Wechat" width="300" height="450"> | <a href="https://gitter.im/ms-design/ms-design">加入Gitter聊天室</a> |
 
 ## 许可证
 
