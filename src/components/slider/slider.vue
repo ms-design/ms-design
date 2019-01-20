@@ -2,18 +2,16 @@
   <div class="ms-slider">
     <div
       v-if="!isIE"
-      class="ms-slider__progress"
-      :class="statusClass"
+      :class="progressClasses"
       :style="progressStyle"
     />
     <input
-      class="ms-slider__input"
-      :class="statusClass"
+      type="range"
+      :class="inputClasses"
       :disabled="disabled"
       :min="min"
       :max="max"
       :value="value"
-      type="range"
       @input="handleInput"
       @change="handleChange"
     >
@@ -32,6 +30,9 @@
  * @example
  * <Slider v-model="value"></Slider>
  */
+
+const prefixClass = 'ms-slider';
+
 export default {
   name: 'Slider',
   model: {
@@ -86,10 +87,23 @@ export default {
         width: `${((value - min) * 100) / (max - min)}%`
       };
     },
-    statusClass() {
-      return {
-        disabled: this.disabled
-      };
+    progressClasses() {
+      const basicClass = `${prefixClass}__progress`;
+      return [
+        basicClass,
+        {
+          [`${basicClass}_disabled`]: this.disabled
+        }
+      ];
+    },
+    inputClasses() {
+      const basicClass = `${prefixClass}__input`;
+      return [
+        basicClass,
+        {
+          [`${basicClass}_disabled`]: this.disabled
+        }
+      ];
     }
   },
   methods: {
@@ -143,7 +157,7 @@ export default {
     height: 2px;
     background-color: @primary-color;
     z-index: 1;
-    &.disabled {
+    &_disabled {
       background-color: #c4c4c4;
       cursor: not-allowed;
     }
@@ -173,7 +187,8 @@ export default {
     }
     &::-ms-thumb {
       .thumb-common-style();
-      transform: translateY(3px); //IE下的thumb偏移量需要重新计算
+      // IE下的thumb偏移量需要重新计算
+      transform: translateY(3px);
     }
     &::-webkit-slider-runnable-track {
       .track-common-style();
@@ -182,7 +197,7 @@ export default {
       .track-common-style();
     }
     &::-ms-track {
-      //IE下的track样式与其他浏览器不一样，不能使用track-common-style
+      // IE下的track样式与其他浏览器不一样, 不能使用track-common-style
       width: 100%;
       height: 2px;
       cursor: pointer;
@@ -197,7 +212,7 @@ export default {
       background: #c4c4c4;
       border-radius: 3px;
     }
-    &.disabled {
+    &_disabled {
       cursor: not-allowed;
       background-color: transparent;
       &::-webkit-slider-thumb {
@@ -222,7 +237,8 @@ export default {
         cursor: not-allowed;
       }
       &::-ms-fill-lower {
-        background: #c4c4c4; //IE下，disabled状态时 track左边颜色不是灰色，需要手动置灰
+        // IE下，disabled状态时track左边颜色不是灰色, 需要手动置灰
+        background: #c4c4c4;
       }
     }
   }
