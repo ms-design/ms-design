@@ -170,7 +170,7 @@ export default {
 #### Checkbox props
 | 属性 | 说明 | 类型 | 可选值 | 默认值 |
 | :------------ | :------------ | :------------ | :------------ | :------------ |
-| checked | 是否被选中, 可以使用 `v-model` 双向绑定数据 | Boolean | `true` \| `false` | `false` |
+| checked | 是否被选中, 可以使用 `v-model` 双向绑定数据 | Number | `0`(未选中)、`1`(已选中)、`2`(不确定) | `0` |
 | disabled | 是否禁用当前项 | Boolean | `true` \| `false` | `false` |
 
 #### Checkbox events
