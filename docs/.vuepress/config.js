@@ -76,6 +76,12 @@ module.exports = {
             children: [
               '/components/tooltip.md'
             ]
+          }, {
+            title: 'Status 状态',
+            collapsable: false,
+            children: [
+              '/components/progressRing.md'
+            ]
           }
         ]
       },
@@ -103,6 +109,12 @@ module.exports = {
             collapsable: false,
             children: [
               '/components/tooltip.md'
+            ]
+          }, {
+            title: 'Status',
+            collapsable: false,
+            children: [
+              '/components/progressRing.md'
             ]
           }
         ]
