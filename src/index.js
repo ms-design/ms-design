@@ -8,6 +8,8 @@ import Select from './components/select';
 import Slider from './components/slider';
 import Toggle from './components/toggle';
 import Tooltip from './components/tooltip';
+import ProgressBar from './components/progressBar';
+import ProgressRing from './components/progressRing';
 
 const components = {
   Button,
@@ -19,7 +21,9 @@ const components = {
   Select,
   Slider,
   Toggle,
-  Tooltip
+  Tooltip,
+  ProgressBar,
+  ProgressRing
 };
 
 const install = function(Vue) {

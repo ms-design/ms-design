@@ -74,7 +74,14 @@ module.exports = {
             title: 'View 视图',
             collapsable: false,
             children: [
-              '/components/tooltip.md'
+              '/components/tooltip.md',
+            ]
+          }, {
+            title: '进度和信息',
+            collapsable: false,
+            children: [
+              '/components/progressBar.md',
+              '/components/progressRing.md',
             ]
           }
         ]
