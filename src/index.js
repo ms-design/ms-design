@@ -9,6 +9,7 @@ import Slider from './components/slider';
 import Toggle from './components/toggle';
 import Tooltip from './components/tooltip';
 import Tree from './components/tree';
+import CollapseTransition from './components/transitions';
 
 const components = {
   Button,
@@ -21,7 +22,8 @@ const components = {
   Slider,
   Toggle,
   Tooltip,
-  Tree
+  Tree,
+  CollapseTransition
 };
 
 const install = function(Vue) {

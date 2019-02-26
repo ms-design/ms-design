@@ -4,7 +4,7 @@
     :class="`ms-treenode_level${level}`"
   >
     <div
-      class="ms-treenode_item"
+      :class="`ms-treenode_level${level}__item ms-treenode__item`"
       :style="{'padding-left':level>1?'20px':0}"
     >
       <span class="ms-treenode-left_empty" />
@@ -35,23 +35,32 @@
       </span>
       <span class="ms-treenode-right_empty" />
     </div>
-    <div
-      v-for="node in children"
-      v-show="isExpand"
-      :key="node[msTree.labelField]"
-      class="ms-treenode__chidren"
-    >
-      <TreeNode
-        :title="node[msTree.labelField]"
-        :children="node[msTree.childrenField]"
-        :level="level+1"
-      />
-    </div>
+    <collapse-transition>
+      <div
+        v-show="isExpand"
+        :class="`ms-treenode_level${level}__chidren`"
+      >
+        <TreeNode
+          v-for="node in children"
+          :key="node[msTree.labelField]"
+          class="ms-treenode__chidren-item"
+          :title="node[msTree.labelField]"
+          :children="node[msTree.childrenField]"
+          :level="level+1"
+        />
+      </div>
+    </collapse-transition>
   </div>
 </template>
 <script>
+/* eslint-disable */
+import CollapseTransition from '../transitions/index.js';
+
 export default {
   name: 'TreeNode',
+  components: {
+    CollapseTransition
+  },
   model: {
     prop: 'value',
     event: 'input'
@@ -91,7 +100,11 @@ export default {
   },
   computed: {
     isHasChildren() {
-      return !!(this.children && this.children.length && this.children.length > 0);
+      return !!(
+        this.children
+        && this.children.length
+        && this.children.length > 0
+      );
     }
   },
   methods: {
@@ -121,7 +134,7 @@ export default {
     font-size: @fontSize;
     color: @base-black-color;
   }
-  .ms-treenode_item {
+  .ms-treenode__item {
     height: 30px;
     line-height: 30px;
     &:hover {

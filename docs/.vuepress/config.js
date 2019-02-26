@@ -58,7 +58,7 @@ module.exports = {
           {
             title: 'Basic 基础',
             collapsable: false,
-            children: ['/components/button.md', '/components/icon.md','/components/tree.md']
+            children: ['/components/transition.md','/components/button.md', '/components/icon.md','/components/tree.md']
           }, {
             title: 'Form 表单',
             collapsable: false,

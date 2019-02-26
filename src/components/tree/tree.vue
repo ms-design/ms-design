@@ -47,7 +47,9 @@ export default {
     }
   },
   data() {
-    return {};
+    return {
+      expand: false
+    };
   },
   computed: {},
   methods: {}

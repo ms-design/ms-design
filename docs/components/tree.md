@@ -4,7 +4,7 @@ title: Tree 树形控件
 
 <ClientOnly>
 <template>
-  <show-components title="基础用法" :linesOfCode="23">
+  <show-components title="基础用法" :linesOfCode="50">
     <show-components-item label="">
         <Tree :data="data" />
     </show-components-item>
@@ -63,10 +63,14 @@ export default {
 
 </template>
   </show-components>
+  
+  <show-components title="带选框的树" :linesOfCode="26">
+    <show-components-item :label="">
+       <Tree :data="data" />
+    </show-components-item>
+  </show-components>
+ 
 </template>
-
-
-
 </ClientOnly>
 
 <script>
@@ -115,16 +119,17 @@ export default {
 
 ### API
 
-#### Input props
-| 属性 | 说明 | 类型 | 可选值 | 默认值 |
-| :------------ | :------------ | :------------ | :------------ | :------------ |
-| value | 输入框的值, 支持 `v-model` | String | — | 无 |
-| type | 输入框类型 | String | `text`、`password` 或者不设置 | `text` |
-| disabled | 输入框是否禁用 | Boolean | `true` \| `false` | `false` |
+#### Tree props
+| 属性          | 说明         | 类型    | 可选值 | 默认值     |
+| :------------ | :----------- | :------ | :----- | :--------- |
+| data          | 数据源       | Array   | —     | 无         |
+| showCheckbox  | 是否展示选框 | Boolean | —     | false      |
+| labelField    | 文本字段     | String  | —     | "label"    |
+| childrenField | 子节点字段   | String  | —     | "children" |
 
-#### Input event
-| 事件名 | 说明 | 返回值 |
-| :------------ | :------------ | :------------ |
-| input | 输入框内容改变时触发 | 改变后的内容 |
-| focus | 输入框聚焦时触发 | 无 |
-| blur | 输入框失去焦点时触发 | 无 |
+#### Tree event
+| 事件名 | 说明                 | 返回值       |
+| :----- | :------------------- | :----------- |
+| input  | 输入框内容改变时触发 | 改变后的内容 |
+| focus  | 输入框聚焦时触发     | 无           |
+| blur   | 输入框失去焦点时触发 | 无           |
