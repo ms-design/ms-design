@@ -63,13 +63,11 @@ export default {
 
 </template>
   </show-components>
-  
   <show-components title="带选框的树" :linesOfCode="26">
-    <show-components-item :label="">
+    <show-components-item label="">
        <Tree :data="data" />
     </show-components-item>
   </show-components>
- 
 </template>
 </ClientOnly>
 
