@@ -16,10 +16,8 @@ export default {
   },
   data() {
     return {
+      isChange: false,
       select: [3, 7, 8],
-      handleChange() {
-        alert('node change');
-      },
       data2: [
         {
           id: 1,
@@ -71,6 +69,11 @@ export default {
         }
       ]
     };
+  },
+  methods: {
+    handleChange() {
+      this.isChange = true;
+    }
   }
 };
 </script>

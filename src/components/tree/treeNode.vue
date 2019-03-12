@@ -56,11 +56,15 @@
 <script>
 /* eslint-disable */
 import CollapseTransition from '../transitions/index.js';
+import Icon from '../icon';
+import Checkbox from '../checkbox'
 
 export default {
   name: 'TreeNode',
   components: {
-    CollapseTransition
+    CollapseTransition,
+    Icon,
+    Checkbox
   },
   model: {
     prop: 'value',

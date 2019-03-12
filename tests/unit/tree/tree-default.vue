@@ -6,11 +6,11 @@
 import Tree from '@/components/tree';
 
 export default {
+  components: {
+    Tree
+  },
   data() {
     return {
-      components: {
-        Tree
-      },
       data: [
         {
           label: '一级 1',

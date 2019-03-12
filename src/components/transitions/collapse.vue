@@ -1,6 +1,5 @@
 <template>
   <transition
-    tag="div"
     @before-enter="beforeEnter"
     @enter="enter"
     @after-enter="afterEnter"
