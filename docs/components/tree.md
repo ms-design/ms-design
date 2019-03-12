@@ -66,7 +66,7 @@ export default {
   <show-components title="带选框的树" :linesOfCode="50">
     <show-components-item label="" >
        <p>选中id： {{this.select}}</p>
-       <Tree :data="data2" v-model="select" :showCheckbox="true"/>
+       <Tree :data="data2" @change="handleChange" v-model="select" :showCheckbox="true"/>
     </show-components-item>
 
   <template slot="code">
@@ -135,6 +135,9 @@ export default {
   data() {
     return {
       select:[3,7,8],
+      handleChange(){
+        alert('node change')
+      },
       data:[{
           label: '一级 1',
           children: [{
@@ -225,5 +228,5 @@ export default {
 #### Tree event
 | 事件名 | 说明                 | 返回值       |
 | :----- | :------------------- | :----------- |
-| input  | 树的选择项变化的时候 | 改变后的内容 |
+| change  | 树的选择项变化的时候触发 | 无 |
 

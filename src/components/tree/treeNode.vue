@@ -123,6 +123,7 @@ export default {
       if (node.isChecked === 0) {
         this.cancelNode(node);
       }
+      this.msTree.emit();
     },
     // 选中某个节点,isRunToTop是否是向上执行
     selectNode(node, isRunToTop = false) {

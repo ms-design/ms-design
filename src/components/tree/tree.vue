@@ -58,18 +58,17 @@ export default {
     return {
       expand: false,
       // 树数据的副本
-      copyData: [],
-      LEVEL: 1
+      copyData: []
     };
   },
   watch: {
     data: {
       handler(val) {
         // 有选框，创建一个数据副本
-        if (this.showCheckbox) {
-          this.copy(val);
-          return;
-        }
+        // if (this.showCheckbox) {
+        this.copy(val);
+        return;
+        // }
         this.copyData = val;
       },
       immediate: true
@@ -77,7 +76,7 @@ export default {
   },
   methods: {
     // 递归处理树数据
-    deepHandle(treeData, parentNode = null) {
+    deepHandle(treeData, parentNode = null, LEVEL = 1) {
       const copyTreeData = [];
       if (!Array.isArray(treeData)) return;
       treeData.forEach(nodeItem => {
@@ -85,7 +84,7 @@ export default {
         const copyNodeItem = {
           [this.labelField]: nodeItem[this.labelField],
           [this.idField]: nodeItem[this.idField],
-          LEVEL: this.LEVEL
+          LEVEL
         };
 
         // 挂在父节点
@@ -93,20 +92,25 @@ export default {
           copyNodeItem.parent = parentNode;
         }
 
-        // 是否当前节点为选中节点
-        const result = this.value.includes(copyNodeItem[this.idField]);
+        // 有选框的时候，是否当前节点为选中节点
+        if (this.showCheckbox) {
+          const result = this.value.includes(copyNodeItem[this.idField]);
+          this.$set(copyNodeItem, 'isChecked', result ? 1 : 0);
+        }
 
-        this.$set(copyNodeItem, 'isChecked', result ? 1 : 0);
         // 递归拷贝children
         if (
-          nodeItem.hasOwnProperty(this.childrenField)
-          && nodeItem[this.childrenField].length
+          nodeItem.hasOwnProperty(this.childrenField) &&
+          nodeItem[this.childrenField].length
         ) {
-          this.LEVEL += 1;
           this.$set(
             copyNodeItem,
             this.childrenField,
-            this.deepHandle(nodeItem[this.childrenField], copyNodeItem)
+            this.deepHandle(
+              nodeItem[this.childrenField],
+              copyNodeItem,
+              LEVEL + 1
+            )
           );
         }
 
@@ -116,6 +120,9 @@ export default {
     },
     copy(resouceData) {
       this.copyData = this.deepHandle(resouceData);
+    },
+    emit() {
+      this.$emit('change');
     }
   }
 };
