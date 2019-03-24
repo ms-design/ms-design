@@ -126,7 +126,7 @@ export default {
   user-select: none;
   width: 20px;
   height: 20px;
-  line-height: inherit;
+  line-height: 1;
   font-size: 18px;
   color: #fff;
   flex: 0 0 auto;
